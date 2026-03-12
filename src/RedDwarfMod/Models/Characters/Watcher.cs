@@ -21,7 +21,7 @@ public sealed class Watcher : CharacterModel
 
     public override Color NameColor => StsColors.purple;
 
-    public override int StartingHp => 72;
+    public override int StartingHp => 74;
 
     public override int StartingGold => 99;
 
