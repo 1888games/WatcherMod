@@ -2,7 +2,7 @@
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
-namespace WatcherMod.src.WatcherMod.Models.Cards.@as;
+namespace WatcherMod.Models.Cards.CardModels;
 
 public abstract class WishModel(
     int canonicalEnergyCost,
