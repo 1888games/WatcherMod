@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://xq18oj8424v8"]
 
-[ext_resource type="PackedScene" uid="uid://kq7dmrg0ygyf" path="res://scenes/creature_visuals/watcher.tscn" id="1_lpffe"]
+[ext_resource type="PackedScene" uid="uid://kq7dmrg0ygyf" path="res://scenes/creature_visuals/reddwarf.tscn" id="1_lpffe"]
 [ext_resource type="PackedScene" uid="uid://u2pogvbv8n7v" path="res://scenes/reddwarf_mod/vfx/divinity_aura.tscn" id="2_lpffe"]
+
 
 [node name="TestScene" type="Node2D"]
 

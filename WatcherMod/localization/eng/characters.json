@@ -4,13 +4,13 @@
   "WATCHER.banter.dead.endTurnPing": "...",
   "WATCHER.cardsModifierDescription": "Watcher cards will now appear in rewards and shops.",
   "WATCHER.cardsModifierTitle": "Watcher Cards",
-  "WATCHER.description": "A blind ascetic who has come to Evaluate the Spire.\nMaster of the divine Stances.",
+  "WATCHER.description": "Another botched attempt to get the Holly Hop Drive working lands the boys from The Dwarf in Slay The Spire...",
   "WATCHER.eventDeathPrevention": "I must survive. Balance depends on it.",
   "WATCHER.goldMonologue": "[sine]I seek no wealth... but the path demands preparation.[/sine]",
-  "WATCHER.possessiveAdjective": "her",
-  "WATCHER.pronounObject": "her",
-  "WATCHER.pronounPossessive": "hers",
-  "WATCHER.pronounSubject": "she",
-  "WATCHER.title": "The Watcher",
-  "WATCHER.titleObject": "The Watcher"
+  "WATCHER.possessiveAdjective": "their",
+  "WATCHER.pronounObject": "their",
+  "WATCHER.pronounPossessive": "theirs",
+  "WATCHER.pronounSubject": "they",
+  "WATCHER.title": "Red Dwarf",
+  "WATCHER.titleObject": "Red Dwarf"
 }
