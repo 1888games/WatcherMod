@@ -82,5 +82,7 @@
   "ESTABLISHMENT_POWER.smartDescription": "카드가 [blue]보존[/blue]될 때마다, 그 카드의 비용을 [blue]{Amount}[/blue]만큼 낮춥니다.",
 
   "MASTER_REALITY_POWER.title": "현실 지배",
-  "MASTER_REALITY_POWER.description": "카드가 생성될 때마다, 그 카드를 [blue]강화[/blue]합니다."
+  "MASTER_REALITY_POWER.description": "카드가 생성될 때마다, 그 카드를 [blue]강화[/blue]합니다.",
+
+  "DUALITY_POWER.title": "음양성"
 }
