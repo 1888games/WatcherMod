@@ -8,7 +8,7 @@ using RedDwarfMod.Models.Cards.CardModels;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class Weave() : WatcherCardModel(0, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+public sealed class Weave() : RedDwarfCardModel(0, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4m, ValueProp.Move)];
 

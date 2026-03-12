@@ -8,7 +8,7 @@ using RedDwarfMod.Models.Cards.CardModels;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class FlurryOfBlows() : WatcherCardModel(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+public sealed class FlurryOfBlows() : RedDwarfCardModel(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4m, ValueProp.Move)];
 

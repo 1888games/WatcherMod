@@ -106,7 +106,7 @@ public static class ChangeStanceCmd
             foreach (var pile in allPiles)
             {
                 // Make a copy to avoid modification during iteration
-                var watcherCards = pile.Cards.OfType<WatcherCardModel>().ToList();
+                var watcherCards = pile.Cards.OfType<RedDwarfCardModel>().ToList();
 
                 foreach (var card in watcherCards) await card.OnStanceChanged(creature);
             }

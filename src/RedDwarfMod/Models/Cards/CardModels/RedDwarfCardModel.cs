@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace RedDwarfMod.Models.Cards.CardModels;
 
-public abstract class WatcherCardModel(
+public abstract class RedDwarfCardModel(
     int canonicalEnergyCost,
     CardType type,
     CardRarity rarity,
