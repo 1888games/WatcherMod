@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://chrybgjj06cj2"]
 
-[ext_resource type="Shader" uid="uid://bn6su4sdlefyk" path="res://scenes/watcher_mod/vfx/wrath_aura.gdshader" id="1_4333g"]
+[ext_resource type="Shader" uid="uid://bn6su4sdlefyk" path="res://scenes/reddwarf_mod/vfx/wrath_aura.gdshader" id="1_4333g"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4333g"]
 shader = ExtResource("1_4333g")

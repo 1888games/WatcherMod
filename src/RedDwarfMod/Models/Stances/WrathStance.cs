@@ -7,7 +7,7 @@ using RedDwarfMod.Models.Stances;
 public sealed class WrathStance : StancePower
 {
     private const string DamageMultiplier = "DamageMultiplier";
-    protected override string AuraScenePath => "res://scenes/watcher_mod/vfx/wrath_aura.tscn";
+    protected override string AuraScenePath => "res://scenes/reddwarf_mod/vfx/wrath_aura.tscn";
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
         [new(DamageMultiplier, 2m)];

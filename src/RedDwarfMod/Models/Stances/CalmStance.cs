@@ -5,7 +5,7 @@ namespace RedDwarfMod.Models.Stances;
 
 public class CalmStance : StancePower
 {
-    protected override string AuraScenePath => "res://scenes/watcher_mod/vfx/calm_aura.tscn";
+    protected override string AuraScenePath => "res://scenes/reddwarf_mod/vfx/calm_aura.tscn";
 
     public override Task OnExitStance(Creature creature)
     {
