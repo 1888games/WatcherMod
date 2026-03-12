@@ -55,8 +55,8 @@ Open the `local.props` file and update the paths to match your system:
 <Project>
   <PropertyGroup>
     <!-- Paths -->
-    <STS2GamePath>C:\\Steam\\steamapps\\common\\Slay the Spire 2</STS2GamePath>
-    <GodotExePath>C:\\Path\\To\\Godot\\Godot\_v4.x\_mono.exe</GodotExePath>
+    <STS2GamePath>C:\Steam\steamapps\common\Slay the Spire 2</STS2GamePath>
+    <GodotExePath>C:\Path\To\Godot\Godot_v4.x_mono.exe</GodotExePath>
   </PropertyGroup>
 </Project>
 ```
