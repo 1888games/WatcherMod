@@ -4,7 +4,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class Judgment() : CardModel(1, CardType.Skill, CardRarity.Rare, TargetType.AnyEnemy)
 {

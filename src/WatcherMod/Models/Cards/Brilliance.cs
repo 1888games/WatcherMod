@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
-using WatcherMod.Models.Powers;
+using RedDwarfMod.Models.Powers;
 
 public sealed class Brilliance() : CardModel(1, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
 {

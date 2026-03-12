@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class DeusExMachina() : CardModel(-1, CardType.Skill, CardRarity.Rare, TargetType.Self)
 {

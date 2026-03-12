@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class Expunger() : CardModel(1, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
 {

@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class DefendWatcher() : CardModel(1, CardType.Skill, CardRarity.Basic, TargetType.Self)
 {

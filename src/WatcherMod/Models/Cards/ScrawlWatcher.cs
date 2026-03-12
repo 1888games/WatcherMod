@@ -3,7 +3,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class ScrawlWatcher() : CardModel(1, CardType.Skill, CardRarity.Rare, TargetType.None)
 {

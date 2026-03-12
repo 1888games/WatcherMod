@@ -4,9 +4,9 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
-using WatcherMod.Commands;
+using RedDwarfMod.Commands;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class CutThroughFate() : CardModel(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
 {

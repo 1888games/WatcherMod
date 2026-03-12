@@ -6,9 +6,9 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.Powers;
-using WatcherMod.Models.Cards.CardModels;
+using RedDwarfMod.Models.Cards.CardModels;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class BecomeAlmighty() : WishModel(-1, CardType.Power, CardRarity.Token, TargetType.None)
 {

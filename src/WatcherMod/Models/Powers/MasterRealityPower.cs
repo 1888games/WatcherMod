@@ -2,7 +2,7 @@
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.Models;
 
-namespace WatcherMod.Models.Powers;
+namespace RedDwarfMod.Models.Powers;
 
 public sealed class MasterRealityPower : PowerModel
 {

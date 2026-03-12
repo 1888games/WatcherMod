@@ -4,9 +4,9 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Models.Cards;
+using RedDwarfMod.Models.Cards;
 
-namespace WatcherMod.Models.Powers;
+namespace RedDwarfMod.Models.Powers;
 
 public class StudyPower : PowerModel
 {

@@ -1,7 +1,7 @@
 ﻿using MegaCrit.Sts2.Core.Entities.Creatures;
-using WatcherMod.Relics;
+using RedDwarfMod.Relics;
 
-namespace WatcherMod.Models.Stances;
+namespace RedDwarfMod.Models.Stances;
 
 public class CalmStance : StancePower
 {

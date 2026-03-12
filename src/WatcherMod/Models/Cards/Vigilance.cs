@@ -5,9 +5,9 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
-using WatcherMod.Models.Stances;
+using RedDwarfMod.Models.Stances;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class Vigilance() : CardModel(2, CardType.Skill, CardRarity.Basic, TargetType.Self)
 {

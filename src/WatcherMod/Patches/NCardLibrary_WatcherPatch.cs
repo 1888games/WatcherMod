@@ -4,7 +4,7 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Screens.CardLibrary;
 using MegaCrit.Sts2.Core.Saves;
-using WatcherMod.Models.Characters;
+using RedDwarfMod.Models.Characters;
 
 [HarmonyPatch(typeof(NCardLibrary), "_Ready")]
 public static class NCardLibrary_WatcherPatch

@@ -5,10 +5,10 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Commands;
-using WatcherMod.Models.Stances;
+using RedDwarfMod.Commands;
+using RedDwarfMod.Models.Stances;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class Meditate() : CardModel(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {

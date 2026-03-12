@@ -3,10 +3,10 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Models.Powers;
-using WatcherMod.Models.Stances;
+using RedDwarfMod.Models.Powers;
+using RedDwarfMod.Models.Stances;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class Blasphemy() : CardModel(1, CardType.Skill, CardRarity.Rare, TargetType.Self)
 {

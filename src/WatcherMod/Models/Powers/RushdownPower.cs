@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Rooms;
 
-namespace WatcherMod.Models.Powers;
+namespace RedDwarfMod.Models.Powers;
 
 public sealed class RushdownPower : PowerModel
 {

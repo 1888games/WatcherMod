@@ -3,9 +3,9 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Models.Powers;
+using RedDwarfMod.Models.Powers;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class DevaForm() : CardModel(3, CardType.Power, CardRarity.Rare, TargetType.None)
 {

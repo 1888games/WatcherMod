@@ -1,9 +1,9 @@
 ﻿using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Models.Stances;
+using RedDwarfMod.Models.Stances;
 
-namespace WatcherMod.Relics;
+namespace RedDwarfMod.Relics;
 
 public sealed class TeardropLocket : RelicModel
 {

@@ -4,10 +4,10 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Commands;
-using WatcherMod.Models.Stances;
+using RedDwarfMod.Commands;
+using RedDwarfMod.Models.Stances;
 
-namespace WatcherMod.Models.Powers;
+namespace RedDwarfMod.Models.Powers;
 
 public sealed class SimmeringRagePower : PowerModel
 {

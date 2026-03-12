@@ -2,9 +2,9 @@
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Models.Powers;
+using RedDwarfMod.Models.Powers;
 
-namespace WatcherMod.Relics;
+namespace RedDwarfMod.Relics;
 
 public sealed class Duality : RelicModel
 {

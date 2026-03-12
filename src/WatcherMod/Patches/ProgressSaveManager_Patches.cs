@@ -1,9 +1,9 @@
 ﻿using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Saves.Managers;
-using WatcherMod.Models.Characters;
+using RedDwarfMod.Models.Characters;
 
-namespace WatcherMod.Patches;
+namespace RedDwarfMod.Patches;
 
 [HarmonyPatch]
 internal class ProgressSaveManager_Patches

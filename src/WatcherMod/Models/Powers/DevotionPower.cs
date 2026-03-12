@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
-namespace WatcherMod.Models.Powers;
+namespace RedDwarfMod.Models.Powers;
 
 public class DevotionPower : PowerModel
 {

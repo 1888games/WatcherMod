@@ -4,9 +4,9 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
-using WatcherMod.Models.Stances;
+using RedDwarfMod.Models.Stances;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class Halt() : CardModel(0, CardType.Skill, CardRarity.Common, TargetType.Self)
 {

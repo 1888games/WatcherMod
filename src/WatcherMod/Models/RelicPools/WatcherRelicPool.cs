@@ -8,9 +8,9 @@ using Godot;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Unlocks;
-using WatcherMod.Relics;
+using RedDwarfMod.Relics;
 
-namespace WatcherMod.Models.RelicPools;
+namespace RedDwarfMod.Models.RelicPools;
 
 public sealed class WatcherRelicPool : RelicPoolModel
 {

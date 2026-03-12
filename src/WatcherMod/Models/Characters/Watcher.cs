@@ -4,12 +4,12 @@ using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.PotionPools;
-using WatcherMod.Models.CardPools;
-using WatcherMod.Models.Cards;
-using WatcherMod.Models.RelicPools;
-using WatcherMod.Relics;
+using RedDwarfMod.Models.CardPools;
+using RedDwarfMod.Models.Cards;
+using RedDwarfMod.Models.RelicPools;
+using RedDwarfMod.Relics;
 
-namespace WatcherMod.Models.Characters;
+namespace RedDwarfMod.Models.Characters;
 
 public sealed class Watcher : CharacterModel
 {

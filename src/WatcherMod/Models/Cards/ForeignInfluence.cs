@@ -4,7 +4,7 @@ using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class ForeignInfluence() : CardModel(0, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {

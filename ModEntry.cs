@@ -4,7 +4,7 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Models.Characters;
+using RedDwarfMod.Models.Characters;
 
 [ModInitializer("Initialize")]
 public class ModEntry

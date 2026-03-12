@@ -1,7 +1,7 @@
 ﻿using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Models;
 
-namespace WatcherMod.Relics;
+namespace RedDwarfMod.Relics;
 
 public sealed class GoldenEye : RelicModel
 {

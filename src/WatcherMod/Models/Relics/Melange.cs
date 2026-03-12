@@ -2,9 +2,9 @@
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Commands;
+using RedDwarfMod.Commands;
 
-namespace WatcherMod.Relics;
+namespace RedDwarfMod.Relics;
 
 public sealed class Melange : RelicModel
 {

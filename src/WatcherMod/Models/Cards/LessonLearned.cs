@@ -7,9 +7,9 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
-using WatcherMod.Models.Powers;
+using RedDwarfMod.Models.Powers;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class LessonLearned() : CardModel(2, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
 {

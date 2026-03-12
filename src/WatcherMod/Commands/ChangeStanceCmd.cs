@@ -1,7 +1,7 @@
 ﻿using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using WatcherMod.Models.Cards.CardModels;
-using WatcherMod.Models.Stances;
+using RedDwarfMod.Models.Cards.CardModels;
+using RedDwarfMod.Models.Stances;
 
 public static class ChangeStanceCmd
 {

@@ -3,9 +3,9 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Models.Cards;
+using RedDwarfMod.Models.Cards;
 
-namespace WatcherMod.Relics;
+namespace RedDwarfMod.Relics;
 
 public sealed class PureWater : RelicModel
 {

@@ -3,7 +3,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Models;
 
-namespace WatcherMod.Models.Cards.CardModels;
+namespace RedDwarfMod.Models.Cards.CardModels;
 
 public abstract class WatcherCardModel(
     int canonicalEnergyCost,

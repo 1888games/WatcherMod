@@ -5,9 +5,9 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.ValueProps;
-using WatcherMod.Models.Powers;
+using RedDwarfMod.Models.Powers;
 
-namespace WatcherMod.Models.Cards;
+namespace RedDwarfMod.Models.Cards;
 
 public sealed class Omega() : CardModel(3, CardType.Power, CardRarity.Token, TargetType.None)
 {

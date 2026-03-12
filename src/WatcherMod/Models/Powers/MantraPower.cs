@@ -2,10 +2,10 @@
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.Models;
-using WatcherMod.Commands;
-using WatcherMod.Models.Stances;
+using RedDwarfMod.Commands;
+using RedDwarfMod.Models.Stances;
 
-namespace WatcherMod.Models.Powers;
+namespace RedDwarfMod.Models.Powers;
 
 public sealed class MantraPower : PowerModel
 {
