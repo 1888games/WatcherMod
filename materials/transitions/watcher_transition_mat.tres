@@ -1,6 +1,6 @@
-[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://watcher_trans_mat001"]
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://bx0dfe622s25n"]
 
-[ext_resource type="Texture2D" uid="uid://watcher_trans_tex001" path="res://images/ui/transitions/watcher_transition.png" id="1_watcher"]
+[ext_resource type="Texture2D" uid="uid://dwady0beet5w2" path="res://images/ui/transitions/watcher_transition.png" id="1_watcher"]
 
 [sub_resource type="Shader" id="Shader_watcher_trans"]
 code = "shader_type canvas_item;
@@ -19,5 +19,5 @@ void fragment() {
 [resource]
 resource_local_to_scene = true
 shader = SubResource("Shader_watcher_trans")
-shader_parameter/threshold = 0.332
 shader_parameter/transitionTex = ExtResource("1_watcher")
+shader_parameter/threshold = 0.332
