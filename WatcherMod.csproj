@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Godot.NET.Sdk/4.5.1">
 	<!-- Import user-specific paths -->
 	<Import Project="local.props" Condition="Exists('local.props')" />
-
+	<Import Project="mod.props" Condition="Exists('mod.props')" />
 	<PropertyGroup>
 		<TargetFramework>net9.0</TargetFramework>
 		<PlatformTarget>x64</PlatformTarget>
@@ -37,6 +37,7 @@
 		<Content Include="src\Core\**">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</Content>
+		<Content Include="mod.props" />
 		<Content Include="local.props" />
 		<Content Include="mod_manifest.json" />
 		<!-- Import-Dateien verstecken -->

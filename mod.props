@@ -1,0 +1,8 @@
+<Project>
+	<PropertyGroup>
+		<ModName>WatcherMod</ModName>
+		<ModDisplayName>The Watcher - Slay the Spire II</ModDisplayName>
+		<ModAuthor>lamali</ModAuthor>
+		<ModVersion>1.0.1</ModVersion>
+	</PropertyGroup>
+</Project>
