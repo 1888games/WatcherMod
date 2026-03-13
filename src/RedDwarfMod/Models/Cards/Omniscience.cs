@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class Omniscience() : CardModel(4, CardType.Skill, CardRarity.Rare, TargetType.Self)
+public sealed class Omniscience() : CardModel(1, CardType.Skill, CardRarity.Rare, TargetType.Self)
 {
     public override HashSet<CardKeyword> CanonicalKeywords =>
     [

@@ -100,6 +100,10 @@ public sealed class WatcherCardPool : CardPoolModel
             ModelDb.Card<WishWatcher>(),
 
             ModelDb.Card<WeldingMallet>(),
+            ModelDb.Card<Triplicator>(),
+            ModelDb.Card<DistendedRectum>(),
+            ModelDb.Card<TakingTheSmeg>(),
+            //ModelDb.Card<JusticeField>(),
         ];
     }
 

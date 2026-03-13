@@ -14,6 +14,10 @@
   "WELDING_MALLET.title": "Welding Mallet",
   "WELDING_MALLET.description": "Deal {Damage:diff()} damage.",
 
+  "TRIPLICATOR.title": "Triplicator",
+  "TRIPLICATOR.description": "Choose a card from your draw pile.\nAdd a [green]High[/green] and [red]Low[/red] copy to your hand. High is free to play this turn.",
+  "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate.",
+
   "CONSECRATE.title": "Consecrate",
   "CONSECRATE.description": "Deal {Damage:diff()} damage to ALL enemies.",
 
@@ -74,6 +78,11 @@
 
   "PRESSURE_POINTS.title": "Pressure Points",
   "PRESSURE_POINTS.description": "Apply {MarkPower:diff()} [gold]Mark[/gold].\nALL enemies lose Hp\nequal to their [gold]Mark[/gold]",
+
+
+  "DISTENDED_RECTUM.title": "Distended Rectum",
+  "DISTENDED_RECTUM.description": "Insult enemy and Apply {SmegPower:diff()} [gold]Smeg[/gold].",
+
 
   "PROSTRATE.title": "Prostrate",
   "PROSTRATE.description": "Gain {MantraPower:diff()} [gold]Mantra[/gold].\nGain {Block:diff()} [gold]Block[/gold].",
@@ -166,6 +175,10 @@
   "PERSEVERANCE.title": "Perseverance",
   "PERSEVERANCE.description": "Gain {Block:diff()} [gold]Block[/gold].\nWhenever this card is [gold]Retained[/gold], increase its [gold]Block[/gold] by {Increase:diff()}",
 
+
+  "TAKING_THE_SMEG.title": "Taking The Smeg",
+  "TAKING_THE_SMEG.description": "Remove all [gold]Smeg[/gold].\nEnemy loses {SmegDamage:diff()} HP for each [gold]Smeg[/gold] removed.",
+
   "PRAY.title": "Pray",
   "PRAY.description": "Gain {MantraPower:diff()} [gold]Mantra[/gold].\nShuffle an [gold]Insight[/gold] into your draw pile.",
 
@@ -186,6 +199,7 @@
 
   "WORSHIP.title": "Worship",
   "WORSHIP.description": "Gain [blue]5[/blue] [gold]Mantra[/gold].",
+
 
   "DEVOTION.title": "Devotion",
   "DEVOTION.description": "At the start of your turn, gain {DevotionPower:diff()} [gold]Mantra[/gold].",
