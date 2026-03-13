@@ -11,6 +11,9 @@
   "BOWLING_BASH.title": "Bowling Bash",
   "BOWLING_BASH.description": "Deal {Damage:diff()} damage for each enemy in combat.",
 
+  "WELDING_MALLET.title": "Welding Mallet",
+  "WELDING_MALLET.description": "Deal {Damage:diff()} damage.",
+
   "CONSECRATE.title": "Consecrate",
   "CONSECRATE.description": "Deal {Damage:diff()} damage to ALL enemies.",
 

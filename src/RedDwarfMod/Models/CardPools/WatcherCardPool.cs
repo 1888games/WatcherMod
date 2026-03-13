@@ -97,7 +97,9 @@ public sealed class WatcherCardPool : CardPoolModel
             ModelDb.Card<ScrawlWatcher>(),
             ModelDb.Card<SpiritShield>(),
             ModelDb.Card<Vault>(),
-            ModelDb.Card<WishWatcher>()
+            ModelDb.Card<WishWatcher>(),
+
+            ModelDb.Card<WeldingMallet>(),
         ];
     }
 

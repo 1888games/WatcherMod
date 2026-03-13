@@ -42,7 +42,8 @@ public sealed class Watcher : CharacterModel
         ModelDb.Card<DefendWatcher>(),
         ModelDb.Card<DefendWatcher>(),
         ModelDb.Card<Vigilance>(),
-        ModelDb.Card<Eruption>()
+        ModelDb.Card<Eruption>(),
+        ModelDb.Card<WeldingMallet>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
