@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class Triplicator() : CardModel(2, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+public sealed class Triplicator() : CardModel(3, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     public override HashSet<CardKeyword> CanonicalKeywords =>
     [

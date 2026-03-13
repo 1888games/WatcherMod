@@ -8,13 +8,13 @@ using RedDwarfMod.Models.Powers;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class TakingTheSmeg() : CardModel(2, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)
+public sealed class TakingTheSmeg() : CardModel(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         
-        new("SmegDamage", 8m)
+        new("SmegDamage", 6m)
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -37,10 +37,8 @@ public sealed class TakingTheSmeg() : CardModel(2, CardType.Skill, CardRarity.Un
 
                 // Calculate damage: base damage × enemy count
                 var totalDamage =  amt * (int)DynamicVars["SmegDamage"].BaseValue;
-                await DamageCmd.Attack(totalDamage)
-                    .FromCard(this)
-                    .Targeting(enemy)
-                    .Execute(choiceContext);
+
+                await CreatureCmd.Damage(choiceContext, enemy, totalDamage, ValueProp.Unpowered | ValueProp.SkipHurtAnim | ValueProp.Unblockable,this);
 
             }
         }
@@ -49,6 +47,6 @@ public sealed class TakingTheSmeg() : CardModel(2, CardType.Skill, CardRarity.Un
     protected override void OnUpgrade()
     {
        // EnergyCost.UpgradeBy(-1);
-        DynamicVars["SmegDamage"].UpgradeValueBy(3m); // 2 → 3
+        DynamicVars["SmegDamage"].UpgradeValueBy(2m); // 2 → 3
     }
 }

@@ -200,6 +200,8 @@
   "WORSHIP.title": "Worship",
   "WORSHIP.description": "Gain [blue]5[/blue] [gold]Mantra[/gold].",
 
+  "JUSTICE_FIELD.title": "Justice Field",
+  "JUSTICE_FIELD.description": "Gain {MirrorPower:diff()} [blue]Mirror[/blue].",
 
   "DEVOTION.title": "Devotion",
   "DEVOTION.description": "At the start of your turn, gain {DevotionPower:diff()} [gold]Mantra[/gold].",
