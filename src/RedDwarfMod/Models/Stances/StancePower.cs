@@ -1,5 +1,4 @@
-﻿// src/WatcherMod/Models/Stances/StancePower.cs
-
+﻿
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
