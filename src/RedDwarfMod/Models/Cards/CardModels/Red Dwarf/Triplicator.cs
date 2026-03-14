@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.Enchantments;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRarity.Uncommon, TargetType.Self, RedDwarfCharacter.KRYTEN)
+public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRarity.Rare, TargetType.Self, RedDwarfCharacter.KRYTEN)
 {
     public override HashSet<CardKeyword> CanonicalKeywords =>
     [
@@ -26,7 +26,8 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
         await CreatureCmd.TriggerAnim(source.Owner.Creature, "Cast", source.Owner.Character.CastAnimDelay);
         var prefs = new CardSelectorPrefs(source.SelectionScreenPrompt, 1)
         {
-            PretendCardsCanBePlayed = true
+            PretendCardsCanBePlayed = true,
+            
         };
         var drawPile = PileType.Draw.GetPile(Owner).Cards.ToList();
         var card = (await CardSelectCmd.FromSimpleGrid(
@@ -36,7 +37,7 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
             prefs
         )).FirstOrDefault();
 
-
+        if (card is Triplicator) return;
 
         if (card != null)
         {
@@ -46,14 +47,14 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
             {
                 foreach(string key in high.DynamicVars.Keys)
                 {
-                 //   high.DynamicVars[key].BaseValue += high.DynamicVars[key].BaseValue;
+                    high.DynamicVars[key].BaseValue += high.DynamicVars[key].BaseValue;
                 }
 
                 high.EnergyCost.SetThisCombat(0);
                 high.AddKeyword(CardKeyword.Retain);
                 high.AddKeyword(CardKeyword.Exhaust);
                 high.ExhaustOnNextPlay = true;
-                CardCmd.Enchant<Glam>( high, 1);
+                CardCmd.Enchant<Glam>( high, 2);
                 
                 // Shuffle it into draw pile (Random position)
                 CardCmd.PreviewCardPileAdd(

@@ -29,7 +29,7 @@
 
 
   "TRIPLICATOR.title": "Triplicator",
-  "TRIPLICATOR.description": "[purple][sine]Kryten[/sine][/purple]\n\nChoose a card from your draw pile and add a [green]High[/green] and [red]Low[/red] copy to your hand.",
+  "TRIPLICATOR.description": "[purple][sine]Kryten[/sine][/purple]\nChoose a card from your draw pile and add a [green]High[/green] and [red]Low[/red] copy to your hand.\nDoes not work on Triplicator!",
   "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate...",
 
   "JUSTICE_FIELD.title": "Justice Field",
