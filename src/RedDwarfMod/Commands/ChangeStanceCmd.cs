@@ -1,5 +1,6 @@
 ﻿using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using RedDwarfMod.Models.Cards;
 using RedDwarfMod.Models.Cards.CardModels;
 using RedDwarfMod.Models.Stances;
 

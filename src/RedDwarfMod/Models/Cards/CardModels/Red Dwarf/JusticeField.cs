@@ -8,7 +8,7 @@ using RedDwarfMod.Models.Powers;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class JusticeField() : CardModel(2, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+public sealed class JusticeField() : RedDwarfCardModel(2, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<MirrorPower>(1)];
 

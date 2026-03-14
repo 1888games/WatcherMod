@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace RedDwarfMod.Models.Cards;
 
 
-public sealed class WeldingMallet() : CardModel(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+public sealed class WeldingMallet() : RedDwarfCardModel(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy, RedDwarfCharacter.RIMMER)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(9m, ValueProp.Move)];
 

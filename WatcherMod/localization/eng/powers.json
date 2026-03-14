@@ -13,12 +13,17 @@
   "MARK_POWER.smartDescription": "Whenever you play [blue]Pressure Points[/blue], lose [blue]{Amount}[/blue] HP.",
 
   "SMEG_POWER.title": "Smeg",
-  "SMEG_POWER.description": "Enemies take double damage and reduce Smeg by 1",
-  "SMEG_POWER.smartDescription": "Enemies take double damage and reduce [gold]Smeg[/gold] by 1",
+  "SMEG_POWER.description": "Enemies take double damage and reduce Smeg by 1.",
+  "SMEG_POWER.smartDescription": "Enemies take double damage and reduce [gold]Smeg[/gold] by 1.",
+
+
+  "RIMMER_POWER.title": "[Rimmer]",
+  "RIMMER_POWER.description": "This card belongs to Rimmer's set.",
+  "RIMMER_POWER.smartDescription": "This card belongs to Rimmer's set.",
 
   "REFLECT_POWER.title": "Reflect",
-  "REFLECT_POWER.description": "Damage is inflicted on the source instead",
-  "REFLECT_POWER.smartDescription": "Damage infliced on source and reduce [blue]Reflect[/blue] by 1",
+  "REFLECT_POWER.description": "Damage is inflicted on the source instead.",
+  "REFLECT_POWER.smartDescription": "Damage infliced on source and reduce [blue]Reflect[/blue] by 1.",
 
   "MANTRA_POWER.title": "Mantra",
   "MANTRA_POWER.description": "Whenever you gain 10 Mantra, enter [blue]Divinity[/blue]",

@@ -17,8 +17,8 @@ public sealed class MirrorPower : PowerModel
     public override PowerStackType StackType => PowerStackType.Counter;
 
     public decimal DamageIncoming = 0;
-    public Creature? Target;
-    public PlayerChoiceContext PlayerChoiceContext;
+    public Creature? DamageTarget;
+    public PlayerChoiceContext? PlayerChoiceContext;
 
     public override decimal ModifyHpLostAfterOstyLate(Creature target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
     {
@@ -28,7 +28,7 @@ public sealed class MirrorPower : PowerModel
             return amount;
         }
 
-        Target = dealer;
+        DamageTarget = dealer;
 
         DamageIncoming = amount;
     
@@ -41,8 +41,13 @@ public sealed class MirrorPower : PowerModel
         await PowerCmd.Decrement(this);
 
         Flash();
-   
-        await CreatureCmd.Damage(PlayerChoiceContext, Target, DamageIncoming, ValueProp.Unpowered | ValueProp.SkipHurtAnim, base.Owner);
+
+        if (PlayerChoiceContext != null && DamageTarget != null)
+        {
+
+            await CreatureCmd.Damage(PlayerChoiceContext, DamageTarget, DamageIncoming, ValueProp.Unpowered | ValueProp.SkipHurtAnim, null, null);
+
+        }
     }
 
     public override async Task BeforeDamageReceived(PlayerChoiceContext choiceContext, Creature target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)

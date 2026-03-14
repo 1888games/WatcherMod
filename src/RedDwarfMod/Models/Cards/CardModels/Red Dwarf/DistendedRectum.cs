@@ -8,13 +8,17 @@ using RedDwarfMod.Models.Powers;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class DistendedRectum() : CardModel(1, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy)
+public sealed class DistendedRectum() : RedDwarfCardModel(1, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy, RedDwarfCharacter.RIMMER)
 {
+
+
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new PowerVar<SmegPower>(2m)
+        ..base.CanonicalVars,
+         new PowerVar<SmegPower>(2m),
     ];
 
+  
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
         HoverTipFactory.FromPower<SmegPower>()

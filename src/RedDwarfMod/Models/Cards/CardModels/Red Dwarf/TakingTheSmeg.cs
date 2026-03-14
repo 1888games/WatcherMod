@@ -8,7 +8,7 @@ using RedDwarfMod.Models.Powers;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class TakingTheSmeg() : CardModel(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)
+public sealed class TakingTheSmeg() : RedDwarfCardModel(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy, RedDwarfCharacter.LISTER)
 {
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
