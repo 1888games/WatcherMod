@@ -8,14 +8,14 @@ using RedDwarfMod.Models.Powers;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class DistendedRectum() : RedDwarfCardModel(1, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy, RedDwarfCharacter.RIMMER)
+public sealed class Smeghead() : RedDwarfCardModel(0, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy, RedDwarfCharacter.LISTER)
 {
 
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         ..base.CanonicalVars,
-         new PowerVar<CowedPower>(50m),
+         new PowerVar<CowedPower>(25m),
         
     ];
 
@@ -41,6 +41,6 @@ public sealed class DistendedRectum() : RedDwarfCardModel(1, CardType.Skill, Car
 
     protected override void OnUpgrade()
     {
-        DynamicVars["CowedPower"].UpgradeValueBy(30m);
+        DynamicVars["CowedPower"].UpgradeValueBy(10m);
     }
 }

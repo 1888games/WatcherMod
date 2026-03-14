@@ -104,6 +104,7 @@ public sealed class WatcherCardPool : CardPoolModel
             ModelDb.Card<DistendedRectum>(),
             ModelDb.Card<TakingTheSmeg>(),
             ModelDb.Card<JusticeField>(),
+            ModelDb.Card<Smeghead>(),
         ];
     }
 

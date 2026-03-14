@@ -1,4 +1,28 @@
 {
+
+
+  "DISTENDED_RECTUM.title": "Distended Rectum",
+  "DISTENDED_RECTUM.description": "[blue][sine]Rimmer[/sine][/blue]\n\nInsult enemy and Apply {CowedPower:diff()} [green]Cowed[/green].",
+
+
+  "SMEGHEAD.title": "Smeghead",
+  "SMEGHEAD.description": "[blue][sine]Lister[/sine][/blue]\n\nInsult enemy and Apply {CowedPower:diff()} [green]Cowed[/green].",
+
+  "WELDING_MALLET.title": "Welding Mallet",
+  "WELDING_MALLET.description": "Deal {Damage:diff()} damage.",
+
+  "TRIPLICATOR.title": "Triplicator",
+  "TRIPLICATOR.description": "Choose a card from your draw pile.\nAdd a [green]High[/green] and [red]Low[/red] copy to your hand. High is free to play this turn.",
+  "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate.",
+
+  "JUSTICE_FIELD.title": "Justice Field",
+  "JUSTICE_FIELD.description": "Gain {MirrorPower:diff()} [blue]Mirror[/blue].",
+
+
+  "TAKING_THE_SMEG.title": "Taking The Smeg",
+  "TAKING_THE_SMEG.description": "Remove all [gold]Smeg[/gold].\nEnemy loses {SmegDamage:diff()} HP for each [gold]Smeg[/gold] removed.",
+
+
   "DEFEND_WATCHER.title": "Defend",
   "DEFEND_WATCHER.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "STRIKE_WATCHER.title": "Strike",
@@ -11,12 +35,7 @@
   "BOWLING_BASH.title": "Bowling Bash",
   "BOWLING_BASH.description": "Deal {Damage:diff()} damage for each enemy in combat.",
 
-  "WELDING_MALLET.title": "Welding Mallet",
-  "WELDING_MALLET.description": "Deal {Damage:diff()} damage.",
 
-  "TRIPLICATOR.title": "Triplicator",
-  "TRIPLICATOR.description": "Choose a card from your draw pile.\nAdd a [green]High[/green] and [red]Low[/red] copy to your hand. High is free to play this turn.",
-  "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate.",
 
   "CONSECRATE.title": "Consecrate",
   "CONSECRATE.description": "Deal {Damage:diff()} damage to ALL enemies.",
@@ -78,11 +97,6 @@
 
   "PRESSURE_POINTS.title": "Pressure Points",
   "PRESSURE_POINTS.description": "Apply {MarkPower:diff()} [gold]Mark[/gold].\nALL enemies lose Hp\nequal to their [gold]Mark[/gold]",
-
-
-  "DISTENDED_RECTUM.title": "Distended Rectum",
-  "DISTENDED_RECTUM.description": "[blue][sine]Rimmer[/sine][/blue]\n\nInsult enemy and Apply {CowedPower:diff()} [gold]Smeg[/gold].",
-
 
   "PROSTRATE.title": "Prostrate",
   "PROSTRATE.description": "Gain {MantraPower:diff()} [gold]Mantra[/gold].\nGain {Block:diff()} [gold]Block[/gold].",
@@ -176,9 +190,6 @@
   "PERSEVERANCE.description": "Gain {Block:diff()} [gold]Block[/gold].\nWhenever this card is [gold]Retained[/gold], increase its [gold]Block[/gold] by {Increase:diff()}",
 
 
-  "TAKING_THE_SMEG.title": "Taking The Smeg",
-  "TAKING_THE_SMEG.description": "Remove all [gold]Smeg[/gold].\nEnemy loses {SmegDamage:diff()} HP for each [gold]Smeg[/gold] removed.",
-
   "PRAY.title": "Pray",
   "PRAY.description": "Gain {MantraPower:diff()} [gold]Mantra[/gold].\nShuffle an [gold]Insight[/gold] into your draw pile.",
 
@@ -200,8 +211,7 @@
   "WORSHIP.title": "Worship",
   "WORSHIP.description": "Gain [blue]5[/blue] [gold]Mantra[/gold].",
 
-  "JUSTICE_FIELD.title": "Justice Field",
-  "JUSTICE_FIELD.description": "Gain {MirrorPower:diff()} [blue]Mirror[/blue].",
+
 
   "DEVOTION.title": "Devotion",
   "DEVOTION.description": "At the start of your turn, gain {DevotionPower:diff()} [gold]Mantra[/gold].",

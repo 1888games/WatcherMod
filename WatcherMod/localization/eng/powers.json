@@ -13,8 +13,8 @@
   "MARK_POWER.smartDescription": "Whenever you play [blue]Pressure Points[/blue], lose [blue]{Amount}[/blue] HP.",
 
   "COWED_POWER.title": "Cowed",
-  "COWED_POWER.description": "Enemies take double damage, reduce [green]Cowed[/green] by 1.",
-  "COWED_POWER.smartDescription": "Enemies take double damage and reduce [green]Cowed[/green] by 1.",
+  "COWED_POWER.description": "Damage is increased by percentage equal to [green]Cowed[/green]. Reduces by 2 when triggered and 10 at end of turn.",
+  "COWED_POWER.smartDescription": "Enemy damage is reduced by percentage equal to [green]Cowed[/green]. Reduces by 2 when triggeed and 5 at end of turn.",
 
 
   "SMEG_POWER.title": "Smeg",
@@ -43,8 +43,8 @@
   "KOCHANSKI_POWER.smartDescription": "This card belongs to Kochanski's set.",
 
   "MIRROR_POWER.title": "Justice Field",
-  "MIRROR_POWER.description": "Damage is inflicted on the aggressor instead. Reduce [blue]Justice Field[/blue].",
-  "MIRROR_POWER.smartDescription": "Damage is inflicted on the aggressor instead. Reduce [blue]Justice Field[/blue].",
+  "MIRROR_POWER.description": "Damage is inflicted on the aggressor instead. Reduce [blue]Justice Field[/blue] by 1.",
+  "MIRROR_POWER.smartDescription": "Damage is inflicted on the aggressor instead. Reduce [blue]Justice Field[/blue] by 1.",
 
   "MANTRA_POWER.title": "Mantra",
   "MANTRA_POWER.description": "Whenever you gain 10 Mantra, enter [blue]Divinity[/blue]",

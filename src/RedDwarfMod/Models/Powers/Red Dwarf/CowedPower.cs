@@ -16,6 +16,8 @@ namespace RedDwarfMod.Models.Powers;
 public sealed class CowedPower : PowerModel
 {
     private const string _powerAmount = "DamageDecrease";
+    private const string _reducePerUse = "ReducePerUse";
+    private const string _reducePerTurn = "ReducePerTurn";
 
     public override PowerType Type => PowerType.Debuff;
 
@@ -25,18 +27,20 @@ public sealed class CowedPower : PowerModel
 
      protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-       new DynamicVar(_powerAmount, 0.5m)
+       new DynamicVar(_powerAmount, 0.5m),
+         new DynamicVar(_reducePerTurn, 10m),
+          new DynamicVar(_reducePerUse, 5m),
     ];
 
     public override decimal ModifyDamageMultiplicative(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
     {
-        if (dealer != base.Owner)
+        if (target != base.Owner)
         {
             return 1m;
         }
-      
-       
-        return amount;
+
+
+        return 1m + (Amount / 100m);
     }
 
     public override async Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props, Creature? dealer, CardModel? cardSource)
@@ -44,7 +48,19 @@ public sealed class CowedPower : PowerModel
         if (target == base.Owner)
         {
             Flash();
-            await PowerCmd.Decrement(this);
+            await PowerCmd.ModifyAmount(this, -DynamicVars[_reducePerUse].BaseValue, null, null);
         }
+    }
+
+
+    public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    {
+        if (side == CombatSide.Enemy)
+        {
+          
+            await PowerCmd.ModifyAmount(this, -DynamicVars[_reducePerTurn].BaseValue, null, null); 
+
+        }
+           
     }
 }
