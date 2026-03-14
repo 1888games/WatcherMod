@@ -43,6 +43,13 @@
   "TROUT_CREME.description": "[pink][sine]Cat[/sine][/pink]\n\nGain {Block:diff()} [gold]Block[/gold].\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].\nEnjoy your meal!",
 
 
+  "WHITE_HOLE.title": "A White Hole",
+  "WHITE_HOLE.description": "[pink][sine]Cat[/sine][/pink]\nEnd your turn AND skip enemy turn.\nIt's a white hole. What is it? Only joking!",
+
+
+  "DIMENSION_JUMP.title": "Dimension Jump",
+  "DIMENSION_JUMP.description": "[purple][sine]Kryten[/sine][/purple]\n\nEnd this combat and skip to the nearest parallel dimension.\nStart new combat.",
+
 
 
   "DEFEND_WATCHER.title": "Defend",

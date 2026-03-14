@@ -111,6 +111,8 @@ public sealed class WatcherCardPool : CardPoolModel
             ModelDb.Card<CutToenails>(),
             ModelDb.Card<ShootingIrons>(),
             ModelDb.Card<CadmiumTwo>(),
+            ModelDb.Card<WhiteHole>(),
+            ModelDb.Card<DimensionJump>(),
 
 
         ];

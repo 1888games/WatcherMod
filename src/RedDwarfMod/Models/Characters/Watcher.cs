@@ -54,6 +54,8 @@ public sealed class Watcher : CharacterModel
         ModelDb.Card<CutToenails>(),
         ModelDb.Card<ShootingIrons>(),
         ModelDb.Card<CadmiumTwo>(),
+        ModelDb.Card<WhiteHole>(),
+        ModelDb.Card<DimensionJump>(),
 
 
 

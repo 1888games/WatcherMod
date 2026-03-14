@@ -2,10 +2,13 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Afflictions;
 using MegaCrit.Sts2.Core.Models.Enchantments;
+using MegaCrit.Sts2.Core.Nodes.Rooms;
+using MegaCrit.Sts2.Core.Nodes.Vfx;
 
 namespace RedDwarfMod.Models.Cards;
 
@@ -37,10 +40,17 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
             prefs
         )).FirstOrDefault();
 
-        if (card is Triplicator) return;
+       
 
         if (card != null)
         {
+            if (card is Triplicator)
+            {
+                NCombatRoom.Instance?.CombatVfxContainer.AddChildSafely(NThoughtBubbleVfx.Create("This card cannot Triplicate itself!", Owner.Creature, 2.0));
+                return;
+            }
+
+           
             var high = card.CreateClone();
 
             if (high != null)
@@ -54,7 +64,7 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
                 high.AddKeyword(CardKeyword.Retain);
                 high.AddKeyword(CardKeyword.Exhaust);
                 high.ExhaustOnNextPlay = true;
-                CardCmd.Enchant<Glam>( high, 2);
+                if (high is not DimensionJump && high is not WhiteHole) CardCmd.Enchant<Glam>( high, 2);
                 
                 // Shuffle it into draw pile (Random position)
                 CardCmd.PreviewCardPileAdd(
