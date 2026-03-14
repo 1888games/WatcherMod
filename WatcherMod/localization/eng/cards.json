@@ -36,7 +36,7 @@
   "JUSTICE_FIELD.description": "Gain {MirrorPower:diff()} [blue]Mirror[/blue].",
 
   "SHOOTING_IRONS.title": "Shooting Irons",
-  "SHOOTING_IRONS.description": "[purple][sine]Kryten[/sine][/purple]\n\n.Fire pair of pistols.\nDeal {Damage:diff()} damage twice.",
+  "SHOOTING_IRONS.description": "[purple][sine]Kryten[/sine][/purple]\n\nFire a pair of pistols.\nDeal {Damage:diff()} damage twice.",
 
 
   "TROUT_CREME.title": "Trout a la Creme",

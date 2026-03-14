@@ -4,6 +4,8 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Afflictions;
+using MegaCrit.Sts2.Core.Models.Enchantments;
 
 namespace RedDwarfMod.Models.Cards;
 
@@ -35,6 +37,7 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
         )).FirstOrDefault();
 
 
+
         if (card != null)
         {
             var high = card.CreateClone();
@@ -43,10 +46,15 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
             {
                 foreach(string key in high.DynamicVars.Keys)
                 {
-                    high.DynamicVars[key].BaseValue += high.DynamicVars[key].BaseValue;
+                 //   high.DynamicVars[key].BaseValue += high.DynamicVars[key].BaseValue;
                 }
 
-                high.EnergyCost.SetThisTurn(0);
+                high.EnergyCost.SetThisCombat(0);
+                high.AddKeyword(CardKeyword.Retain);
+                high.AddKeyword(CardKeyword.Exhaust);
+                high.ExhaustOnNextPlay = true;
+                CardCmd.Enchant<Glam>( high, 1);
+                
                 // Shuffle it into draw pile (Random position)
                 CardCmd.PreviewCardPileAdd(
                     await CardPileCmd.AddGeneratedCardToCombat(
@@ -68,10 +76,14 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
                     low.DynamicVars[key].BaseValue = 0;
                 }
 
-                low.EnergyCost.SetThisCombat(3);
+                low.EnergyCost.SetThisCombat(2);
+                low.AddKeyword(CardKeyword.Exhaust);
+                low.AddKeyword(CardKeyword.Retain);
+                low.ExhaustOnNextPlay = true;
+                await CardCmd.Afflict<Hexed>( low, 1);
 
-                // Shuffle it into draw pile (Random position)
-                CardCmd.PreviewCardPileAdd(
+    // Shuffle it into draw pile (Random position)
+    CardCmd.PreviewCardPileAdd(
                     await CardPileCmd.AddGeneratedCardToCombat(
                         low,
                         PileType.Hand,
