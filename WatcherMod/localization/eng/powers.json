@@ -12,18 +12,39 @@
   "MARK_POWER.description": "Whenever you play [blue]Pressure Points[/blue], lose [blue]X[/blue] HP.",
   "MARK_POWER.smartDescription": "Whenever you play [blue]Pressure Points[/blue], lose [blue]{Amount}[/blue] HP.",
 
+  "COWED_POWER.title": "Cowed",
+  "COWED_POWER.description": "Enemies take double damage, reduce [green]Cowed[/green] by 1.",
+  "COWED_POWER.smartDescription": "Enemies take double damage and reduce [green]Cowed[/green] by 1.",
+
+
   "SMEG_POWER.title": "Smeg",
-  "SMEG_POWER.description": "Enemies take double damage and reduce Smeg by 1.",
+  "SMEG_POWER.description": "Enemy damage is halved, reduce [gold]Smeg[/gold] by 1.",
   "SMEG_POWER.smartDescription": "Enemies take double damage and reduce [gold]Smeg[/gold] by 1.",
 
 
-  "RIMMER_POWER.title": "[Rimmer]",
-  "RIMMER_POWER.description": "This card belongs to Rimmer's set.",
+  "RIMMER_POWER.title": "Rimmer",
+  "RIMMER_POWER.description": "This card belongs to Arnold Rimmer's set.",
   "RIMMER_POWER.smartDescription": "This card belongs to Rimmer's set.",
 
-  "REFLECT_POWER.title": "Reflect",
-  "REFLECT_POWER.description": "Damage is inflicted on the source instead.",
-  "REFLECT_POWER.smartDescription": "Damage infliced on source and reduce [blue]Reflect[/blue] by 1.",
+  "LISTER_POWER.title": "Lister",
+  "LISTER_POWER.description": "This card belongs to Dave Lister's set.",
+  "LISTER_POWER.smartDescription": "This card belongs to Lister's set.",
+
+  "CAT_POWER.title": "The Cat",
+  "CAT_POWER.description": "This card belongs to The Cat's set.",
+  "CAT_POWER.smartDescription": "This card belongs to The Cats set.",
+
+  "KRYTEN_POWER.title": "Kryten",
+  "KRYTEN_POWER.description": "This card belongs to Kryten 2X4B-523P's set.",
+  "KRYTEN_POWER.smartDescription": "This card belongs to Kryten's set.",
+
+  "KOCHANSKI_POWER.title": "Kochanski",
+  "KOCHANSKI_POWER.description": "This card belongs to Christine Kochanski's set.",
+  "KOCHANSKI_POWER.smartDescription": "This card belongs to Kochanski's set.",
+
+  "MIRROR_POWER.title": "Justice Field",
+  "MIRROR_POWER.description": "Damage is inflicted on the aggressor instead. Reduce [blue]Justice Field[/blue].",
+  "MIRROR_POWER.smartDescription": "Damage is inflicted on the aggressor instead. Reduce [blue]Justice Field[/blue].",
 
   "MANTRA_POWER.title": "Mantra",
   "MANTRA_POWER.description": "Whenever you gain 10 Mantra, enter [blue]Divinity[/blue]",

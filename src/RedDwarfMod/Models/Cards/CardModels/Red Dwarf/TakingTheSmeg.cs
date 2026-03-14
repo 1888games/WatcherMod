@@ -1,6 +1,7 @@
 ﻿using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -14,8 +15,9 @@ public sealed class TakingTheSmeg() : RedDwarfCardModel(1, CardType.Skill, CardR
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         
-        new("SmegDamage", 6m)
+        new("SmegDamage", 10m)
     ];
+
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
@@ -47,6 +49,6 @@ public sealed class TakingTheSmeg() : RedDwarfCardModel(1, CardType.Skill, CardR
     protected override void OnUpgrade()
     {
        // EnergyCost.UpgradeBy(-1);
-        DynamicVars["SmegDamage"].UpgradeValueBy(2m); // 2 → 3
+        DynamicVars["SmegDamage"].UpgradeValueBy(4m); // 2 → 3
     }
 }

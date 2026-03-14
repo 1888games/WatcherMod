@@ -15,22 +15,23 @@ public sealed class DistendedRectum() : RedDwarfCardModel(1, CardType.Skill, Car
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         ..base.CanonicalVars,
-         new PowerVar<SmegPower>(2m),
+         new PowerVar<CowedPower>(1m),
     ];
 
   
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromPower<SmegPower>()
+         ..base.ExtraHoverTips,
+        HoverTipFactory.FromPower<CowedPower>(),
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
         // Apply Mark power
-        await PowerCmd.Apply<SmegPower>(
+        await PowerCmd.Apply<CowedPower>(
             cardPlay.Target,
-            DynamicVars["SmegPower"].IntValue,
+            DynamicVars["CowedPower"].IntValue,
             Owner.Creature,
             this
         );
@@ -39,6 +40,6 @@ public sealed class DistendedRectum() : RedDwarfCardModel(1, CardType.Skill, Car
 
     protected override void OnUpgrade()
     {
-        DynamicVars["SmegPower"].UpgradeValueBy(1m);
+        DynamicVars["CowedPower"].UpgradeValueBy(1m);
     }
 }

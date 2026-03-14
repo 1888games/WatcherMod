@@ -14,6 +14,7 @@ public sealed class JusticeField() : RedDwarfCardModel(2, CardType.Skill, CardRa
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
+        ..base.ExtraHoverTips,
         HoverTipFactory.FromPower<MirrorPower>()
     ];
 
