@@ -55,10 +55,9 @@ public sealed class CowedPower : PowerModel
 
     public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
     {
-        if (side == CombatSide.Enemy)
-        {
-          
-            await PowerCmd.ModifyAmount(this, -DynamicVars[_reducePerTurn].BaseValue, null, null); 
+        if (side == CombatSide.Enemy) { 
+       
+            await PowerCmd.ModifyAmount(this, -Amount/2, null, null); 
 
         }
            

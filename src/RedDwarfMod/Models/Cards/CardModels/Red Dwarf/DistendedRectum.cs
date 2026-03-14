@@ -16,7 +16,8 @@ public sealed class DistendedRectum() : RedDwarfCardModel(1, CardType.Skill, Car
     [
         ..base.CanonicalVars,
          new PowerVar<CowedPower>(50m),
-        
+         new PowerVar<InsultPower>(1m)
+
     ];
 
   
@@ -24,6 +25,7 @@ public sealed class DistendedRectum() : RedDwarfCardModel(1, CardType.Skill, Car
     [
          ..base.ExtraHoverTips,
         HoverTipFactory.FromPower<CowedPower>(),
+         HoverTipFactory.FromPower<InsultPower>(),
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

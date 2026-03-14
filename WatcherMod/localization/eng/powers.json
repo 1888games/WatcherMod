@@ -1,25 +1,13 @@
 {
-  "CALM_STANCE.title": "Calm",
-  "CALM_STANCE.description": "When you exit this Stance, gain [blue]2[/blue] {energyPrefix:energyIcons(1)}.",
-
-  "WRATH_STANCE.title": "Wrath",
-  "WRATH_STANCE.description": "Deal double damage. Take double damage.",
-
-  "DIVINITY_STANCE.title": "Divinity",
-  "DIVINITY_STANCE.description": "Deal triple damage. Gain [blue]3[/blue] {energyPrefix:energyIcons(1)}. Exit this Stance at the start of your next turn.",
-
-  "MARK_POWER.title": "Mark",
-  "MARK_POWER.description": "Whenever you play [blue]Pressure Points[/blue], lose [blue]X[/blue] HP.",
-  "MARK_POWER.smartDescription": "Whenever you play [blue]Pressure Points[/blue], lose [blue]{Amount}[/blue] HP.",
 
   "COWED_POWER.title": "Cowed",
-  "COWED_POWER.description": "Damage is increased by percentage equal to [green]Cowed[/green]. Reduces by 2 when triggered and 10 at end of turn.",
-  "COWED_POWER.smartDescription": "Enemy damage is reduced by percentage equal to [green]Cowed[/green]. Reduces by 2 when triggeed and 5 at end of turn.",
+  "COWED_POWER.description": "Damage is increased by percentage equal to [green]Cowed[/green]. Reduces by 10 when triggered and halves at end of turn.",
+  "COWED_POWER.smartDescription": "Damage is increased by percentage equal to [green]Cowed[/green]. Reduces by 10 when triggered and halves at end of turn.",
 
 
   "SMEG_POWER.title": "Smeg",
   "SMEG_POWER.description": "Enemy damage is halved, reduce [gold]Smeg[/gold] by 1.",
-  "SMEG_POWER.smartDescription": "Enemies take double damage and reduce [gold]Smeg[/gold] by 1.",
+  "SMEG_POWER.smartDescription": "Enemy damage is halved, reduce [gold]Smeg[/gold] by 1.",
 
 
   "RIMMER_POWER.title": "Rimmer",
@@ -45,6 +33,32 @@
   "MIRROR_POWER.title": "Justice Field",
   "MIRROR_POWER.description": "Damage is inflicted on the aggressor instead. Reduce [blue]Justice Field[/blue] by 1.",
   "MIRROR_POWER.smartDescription": "Damage is inflicted on the aggressor instead. Reduce [blue]Justice Field[/blue] by 1.",
+
+  "INSULT_POWER.title": "Insult",
+  "INSULT_POWER.description": "Insults cause an enemy to [green]Cower[/green].",
+  "INSULT_POWER.smartDescription": "Insults cause an enemy to [green]Cower[/green].",
+
+  "DISGUST_POWER.title": "Disgust",
+  "DISGUST_POWER.description": "Disgusting acts and objects cause an enemy to gain [gold]Smeg[/gold].",
+  "DISGUST_POWER.smartDescription": "Disgusting acts and objects cause an enemy to gain [gold]Smeg[/gold].",
+
+
+  "SUSTENANCE_POWER.title": "Sustenance",
+  "SUSTENANCE_POWER.description": "Whenever you gain 10 [orange]Sustenance[/orange], gain [blue]2[/blue] {energyPrefix:energyIcons(1)}.",
+
+  "CALM_STANCE.title": "Calm",
+  "CALM_STANCE.description": "When you exit this Stance, gain [blue]2[/blue] {energyPrefix:energyIcons(1)}.",
+
+  "WRATH_STANCE.title": "Wrath",
+  "WRATH_STANCE.description": "Deal double damage. Take double damage.",
+
+  "DIVINITY_STANCE.title": "Divinity",
+  "DIVINITY_STANCE.description": "Deal triple damage. Gain [blue]3[/blue] {energyPrefix:energyIcons(1)}. Exit this Stance at the start of your next turn.",
+
+  "MARK_POWER.title": "Mark",
+  "MARK_POWER.description": "Whenever you play [blue]Pressure Points[/blue], lose [blue]X[/blue] HP.",
+  "MARK_POWER.smartDescription": "Whenever you play [blue]Pressure Points[/blue], lose [blue]{Amount}[/blue] HP.",
+
 
   "MANTRA_POWER.title": "Mantra",
   "MANTRA_POWER.description": "Whenever you gain 10 Mantra, enter [blue]Divinity[/blue]",

@@ -14,7 +14,7 @@ namespace RedDwarfMod.Models.Powers;
 
 public sealed class SmegPower : PowerModel
 {
-    private const string _damageIncrease = "DamageIncrease";
+    private const string _damageDecrease = "DamageDecrease";
 
     public override PowerType Type => PowerType.Debuff;
 
@@ -24,17 +24,17 @@ public sealed class SmegPower : PowerModel
 
      protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-       new DynamicVar("DamageIncrease", 2m)
+       new DynamicVar(_damageDecrease, 0.5m)
     ];
 
     public override decimal ModifyDamageMultiplicative(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
     {
-        if (target != base.Owner)
+        if (dealer != base.Owner)
         {
             return 1m;
         }
-        
-        decimal num = base.DynamicVars["DamageIncrease"].BaseValue;
+
+        decimal num = base.DynamicVars[_damageDecrease].BaseValue;
        
         return num;
     }

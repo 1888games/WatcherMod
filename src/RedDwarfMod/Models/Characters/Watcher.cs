@@ -47,7 +47,12 @@ public sealed class Watcher : CharacterModel
         ModelDb.Card<Smeghead>(),
         ModelDb.Card<Triplicator>(),
         ModelDb.Card<WeldingMallet>(),
-        ModelDb.Card<TakingTheSmeg>()
+        ModelDb.Card<TakingTheSmeg>(),
+        ModelDb.Card<MuttonVindaloo>(),
+         ModelDb.Card<TroutCreme>(),
+        ModelDb.Card<StiffSocks>(),
+          ModelDb.Card<CutToenails>()
+
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

@@ -8,33 +8,33 @@ using RedDwarfMod.Models.Powers;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class Smeghead() : RedDwarfCardModel(0, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy, RedDwarfCharacter.LISTER)
+public sealed class CutToenails() : RedDwarfCardModel(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy, RedDwarfCharacter.LISTER)
 {
 
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         ..base.CanonicalVars,
-         new PowerVar<CowedPower>(25m),
-         new PowerVar<InsultPower>(1m)
-        
+         new PowerVar<SmegPower>(1m),
+         
+
     ];
 
   
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
          ..base.ExtraHoverTips,
-        HoverTipFactory.FromPower<CowedPower>(),
-        HoverTipFactory.FromPower<InsultPower>(),
+        HoverTipFactory.FromPower<SmegPower>(),
+        HoverTipFactory.FromPower<DisgustPower>(),
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
         // Apply Mark power
-        await PowerCmd.Apply<CowedPower>(
+        await PowerCmd.Apply<SmegPower>(
             cardPlay.Target,
-            DynamicVars["CowedPower"].IntValue,
+            DynamicVars["SmegPower"].IntValue,
             Owner.Creature,
             this
         );
@@ -43,6 +43,6 @@ public sealed class Smeghead() : RedDwarfCardModel(0, CardType.Skill, CardRarity
 
     protected override void OnUpgrade()
     {
-        DynamicVars["CowedPower"].UpgradeValueBy(10m);
+        DynamicVars["SmegPower"].UpgradeValueBy(1);
     }
 }
