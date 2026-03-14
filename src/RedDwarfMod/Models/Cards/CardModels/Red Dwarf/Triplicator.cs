@@ -50,7 +50,7 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
                     high.DynamicVars[key].BaseValue += high.DynamicVars[key].BaseValue;
                 }
 
-                high.EnergyCost.SetThisCombat(0);
+                high.EnergyCost.SetThisCombat(2);
                 high.AddKeyword(CardKeyword.Retain);
                 high.AddKeyword(CardKeyword.Exhaust);
                 high.ExhaustOnNextPlay = true;
@@ -78,11 +78,10 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
                 }
 
                 low.EnergyCost.SetThisCombat(2);
-                low.AddKeyword(CardKeyword.Exhaust);
+                low.AddKeyword(CardKeyword.Unplayable);
                 low.AddKeyword(CardKeyword.Retain);
                 low.ExhaustOnNextPlay = true;
-                await CardCmd.Afflict<Hexed>( low, 1);
-
+              
     // Shuffle it into draw pile (Random position)
     CardCmd.PreviewCardPileAdd(
                     await CardPileCmd.AddGeneratedCardToCombat(
