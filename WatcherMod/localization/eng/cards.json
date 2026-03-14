@@ -1,23 +1,14 @@
 {
 
 
-  "DISTENDED_RECTUM.title": "Distended Rectum",
-  "DISTENDED_RECTUM.description": "[blue][sine]Rimmer[/sine][/blue]\n\n[red]Insult[/red] enemy.\nApply {CowedPower:diff()} [green]Cowed[/green].",
-
-
   "SMEGHEAD.title": "Smeghead",
-  "SMEGHEAD.description": "[aqua][sine]Lister[/sine][/aqua]\n\n[red]Insult[/red] enemy.\nApply {CowedPower:diff()} [green]Cowed[/green].",
+  "SMEGHEAD.description": "[aqua][sine]Lister[/sine][/aqua]\n\n[red]Insult[/red] enemy.\nApply {CowedPower:diff()} [pink]Cowed[/pink].",
 
-  "WELDING_MALLET.title": "Welding Mallet",
-  "WELDING_MALLET.description": "Deal {Damage:diff()} damage.",
+  "STIFF_SOCKS.title": "Stiff Socks",
+  "STIFF_SOCKS.description": "[aqua][sine]Lister[/sine][/aqua]\n\nWhack socks with a hammer.\nApply {SmegPower:diff()} [gold]Smeg[/gold].",
 
-  "TRIPLICATOR.title": "Triplicator",
-  "TRIPLICATOR.description": "Choose a card from your draw pile.\nAdd a [green]High[/green] and [red]Low[/red] copy to your hand. High is free to play this turn.",
-  "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate.",
-
-  "JUSTICE_FIELD.title": "Justice Field",
-  "JUSTICE_FIELD.description": "Gain {MirrorPower:diff()} [blue]Mirror[/blue].",
-
+  "CUT_TOENAILS.title": "Trim Your Toenails...",
+  "CUT_TOENAILS.description": "[aqua][sine]Lister[/sine][/aqua]\n\n....Using your teeth.\nApply {SmegPower:diff()} [gold]Smeg[/gold].",
 
   "TAKING_THE_SMEG.title": "Taking The Smeg",
   "TAKING_THE_SMEG.description": "[aqua][sine]Lister[/sine][/aqua]\n\nRemove all [gold]Smeg[/gold].\nEnemy loses {SmegDamage:diff()} HP for each [gold]Smeg[/gold] removed.",
@@ -25,14 +16,33 @@
   "MUTTON_VINDALOO.title": "Mutton Vindaloo",
   "MUTTON_VINDALOO.description": "[aqua][sine]Lister[/sine][/aqua]\n\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].",
 
+
+  "DISTENDED_RECTUM.title": "Distended Rectum",
+  "DISTENDED_RECTUM.description": "[blue][sine]Rimmer[/sine][/blue]\n\n[red]Insult[/red] enemy.\nApply {CowedPower:diff()} [pink]Cowed[/pink].",
+
+  "WELDING_MALLET.title": "Welding Mallet",
+  "WELDING_MALLET.description": "[blue][sine]Rimmer[/sine][/blue]\n\nDeal {Damage:diff()} damage.",
+
+  "CADMIUM_TWO.title": "Cadmium II",
+  "CADMIUM_TWO.description": "[blue][sine]Rimmer[/sine][/blue]\n\nFailed to fix drive plate again.\nLeak {RadiationPower:diff()} [green]Radiation[/green].",
+
+
+
+  "TRIPLICATOR.title": "Triplicator",
+  "TRIPLICATOR.description": "[purple][sine]Kryten[/sine][/purple]\n\nChoose a card from your draw pile and add a [green]High[/green] and [red]Low[/red] copy to your hand.",
+  "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate...",
+
+  "JUSTICE_FIELD.title": "Justice Field",
+  "JUSTICE_FIELD.description": "Gain {MirrorPower:diff()} [blue]Mirror[/blue].",
+
+  "SHOOTING_IRONS.title": "Shooting Irons",
+  "SHOOTING_IRONS.description": "[purple][sine]Kryten[/sine][/purple]\n\n.Fire pair of pistols.\nDeal {Damage:diff()} damage twice.",
+
+
   "TROUT_CREME.title": "Trout a la Creme",
-  "TROUT_CREME.description": "[pink][sine]Cat[/sine][/pink]\n\nGain {Block:diff()} [gold]Block[/gold]. Gain {SustenancePower:diff()} [orange]Sustenance[/orange].",
+  "TROUT_CREME.description": "[pink][sine]Cat[/sine][/pink]\n\nGain {Block:diff()} [gold]Block[/gold].\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].\nEnjoy your meal!",
 
-  "STIFF_SOCKS.title": "Stiff Socks",
-  "STIFF_SOCKS.description": "[aqua][sine]Lister[/sine][/aqua]\n\nWhack socks with a hammer.\nApply {SmegPower:diff()} [gold]Smeg[/gold].",
 
-  "CUT_TOENAILS.title": "Trim Your Toenails...",
-  "CUT_TOENAILS.description": "[aqua][sine]Lister[/sine][/aqua]\n\n....Using your teeth.\nApply {SmegPower:diff()} [gold]Smeg[/gold].",
 
 
   "DEFEND_WATCHER.title": "Defend",

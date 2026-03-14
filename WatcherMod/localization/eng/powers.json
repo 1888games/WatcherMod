@@ -1,8 +1,8 @@
 {
 
   "COWED_POWER.title": "Cowed",
-  "COWED_POWER.description": "Damage is increased by percentage equal to [green]Cowed[/green]. Reduces by 10 when triggered and halves at end of turn.",
-  "COWED_POWER.smartDescription": "Damage is increased by percentage equal to [green]Cowed[/green]. Reduces by 10 when triggered and halves at end of turn.",
+  "COWED_POWER.description": "Damage is increased by percentage equal to [pink]Cowed[/pink]. Reduces by 10 when triggered and halves at end of turn.",
+  "COWED_POWER.smartDescription": "Damage is increased by percentage equal to [pink]Cowed[/pink]. Reduces by 10 when triggered and halves at end of turn.",
 
 
   "SMEG_POWER.title": "Smeg",
@@ -45,6 +45,10 @@
 
   "SUSTENANCE_POWER.title": "Sustenance",
   "SUSTENANCE_POWER.description": "Whenever you gain 10 [orange]Sustenance[/orange], gain [blue]2[/blue] {energyPrefix:energyIcons(1)}.",
+
+  "RADIATION_POWER.title": "Radiation",
+  "RADIATION_POWER.description": "Enemies receive damage equal to their [green]Radiation[/green] exposure at the start of their turn. Radiation halves each turn.",
+
 
   "CALM_STANCE.title": "Calm",
   "CALM_STANCE.description": "When you exit this Stance, gain [blue]2[/blue] {energyPrefix:energyIcons(1)}.",

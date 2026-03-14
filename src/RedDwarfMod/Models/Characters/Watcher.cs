@@ -49,9 +49,13 @@ public sealed class Watcher : CharacterModel
         ModelDb.Card<WeldingMallet>(),
         ModelDb.Card<TakingTheSmeg>(),
         ModelDb.Card<MuttonVindaloo>(),
-         ModelDb.Card<TroutCreme>(),
+        ModelDb.Card<TroutCreme>(),
         ModelDb.Card<StiffSocks>(),
-          ModelDb.Card<CutToenails>()
+        ModelDb.Card<CutToenails>(),
+        ModelDb.Card<ShootingIrons>(),
+        ModelDb.Card<CadmiumTwo>(),
+
+
 
     ];
 
