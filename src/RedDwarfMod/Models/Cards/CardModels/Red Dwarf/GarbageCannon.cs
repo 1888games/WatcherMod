@@ -14,7 +14,7 @@ using RedDwarfMod.Models.Powers;
 namespace RedDwarfMod.Models.Cards;
 
 
-public sealed class GarbageCannon() : RedDwarfCardModel(2, CardType.Attack, CardRarity.Rare, TargetType.AllEnemies, RedDwarfCharacter.KRYTEN)
+public sealed class GarbageCannon() : RedDwarfCardModel(2, CardType.Attack, CardRarity.Rare, TargetType.RandomEnemy, RedDwarfCharacter.KRYTEN)
 {
 
 
@@ -29,7 +29,7 @@ public sealed class GarbageCannon() : RedDwarfCardModel(2, CardType.Attack, Card
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         ..base.CanonicalVars,
-        new DamageVar(6m, ValueProp.Move),
+        new DamageVar(8m, ValueProp.Move),
         
 
     ];
@@ -38,40 +38,26 @@ public sealed class GarbageCannon() : RedDwarfCardModel(2, CardType.Attack, Card
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        ArgumentNullException.ThrowIfNull(cardPlay.Target);
-
+        
         ScrapPower scrap = Owner.Creature.GetPower<ScrapPower>();
 
-        float scale = 0.8f;
+        int scrapAmount = scrap.Amount;
 
-        await PowerCmd.ModifyAmount(Owner.Creature.GetPower<ScrapPower>(), -scrap.Amount, Owner.Creature, this);
+        await PowerCmd.ModifyAmount(Owner.Creature.GetPower<ScrapPower>(), -scrapAmount, Owner.Creature, this);
 
         if (IsUpgraded)
         {
 
-            await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).WithHitCount(scrap.Amount).FromCard(this)
-            .TargetingAllOpponents(CombatState)
-            .BeforeDamage(delegate
-            {
-                NGroundFireVfx nGroundFireVfx = NGroundFireVfx.Create(cardPlay.Target);
-                if (nGroundFireVfx == null)
-                {
-                    return Task.CompletedTask;
-                }
-                SfxCmd.Play("event:/sfx/characters/attack_fire");
-                nGroundFireVfx.Scale = Vector2.One * scale;
-                NCombatRoom.Instance?.CombatVfxContainer.AddChildSafely(nGroundFireVfx);
-                scale += 0.1f;
-                return Task.CompletedTask;
-            })
+            await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).WithHitCount(scrapAmount).FromCard(this)
+            .TargetingRandomOpponents(CombatState)
+            .WithHitFx("vfx/vfx_giant_horizontal_slash")
             .Execute(choiceContext);
-
             return;
 
         }
 
-        await await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).WithHitCount(num).FromCard(this)
-            .TargetingAllOpponents(base.CombatState)
+        await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).WithHitCount(scrapAmount).FromCard(this)
+            .TargetingRandomOpponents(CombatState)
             .WithHitFx("vfx/vfx_giant_horizontal_slash")
             .Execute(choiceContext);
 
@@ -82,7 +68,9 @@ public sealed class GarbageCannon() : RedDwarfCardModel(2, CardType.Attack, Card
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(3m);
+        
+     
+      //  DynamicVars.Damage.UpgradeValueBy(3m);
       
 
     }

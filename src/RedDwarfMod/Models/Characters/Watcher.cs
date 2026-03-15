@@ -62,6 +62,8 @@ public sealed class Watcher : CharacterModel
             ModelDb.Card<RoofAttack>(),
             ModelDb.Card<GarbageCannon>(),
         ModelDb.Card<WasteDisposal>(),
+         ModelDb.Card<GarbagePod>(),
+
 
 
 

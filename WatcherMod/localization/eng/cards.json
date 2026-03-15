@@ -32,13 +32,16 @@
 
 
 
+  "GARBAGE_POD.title": "Garbage Pod",
+  "GARBAGE_POD.description": "After intensive investigation, of the markings on the alien pod, it has become clear, to me, [blue][sine]Rimmer[/sine][/blue], that we are dealing, with...it's a smegging Garbage Pod!\nGain {ScrapPower:diff()} [aqua]Scrap[/aqua]",
+
 
   "TRIPLICATOR.title": "Triplicator",
   "TRIPLICATOR.description": "[purple][sine]Kryten[/sine][/purple]\nChoose a card from your draw pile and add a [green]High[/green] and [red]Low[/red] copy to your hand.\nDoes not work on Triplicator!",
   "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate...",
 
   "JUSTICE_FIELD.title": "Justice Field",
-  "JUSTICE_FIELD.description": "[purple][sine]Kryten[/sine][/purple]\n\nGain {MirrorPower:diff()} [blue]Mirror[/blue].",
+  "JUSTICE_FIELD.description": "[purple][sine]Kryten[/sine][/purple]\n\nYou are now entering the Justice Zone.\nGain {MirrorPower:diff()} [blue]Justice Field[/blue].",
 
   "SHOOTING_IRONS.title": "Shooting Irons",
   "SHOOTING_IRONS.description": "[purple][sine]Kryten[/sine][/purple]\n\nFire a pair of pistols.\nDeal {Damage:diff()} damage twice.",
@@ -47,13 +50,11 @@
   "DIMENSION_JUMP.description": "[purple][sine]Kryten[/sine][/purple]\n\nPay {Gold:diff()} [gold]Gold[/gold].\nEnd this combat and skip to the nearest parallel dimension.\nStart new combat.",
 
 
-  "WASTE_DISPOSAL.title": "Waste_Disposal",
+  "WASTE_DISPOSAL.title": "Waste Disposal",
   "WASTE_DISPOSAL.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with 1 [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage.",
 
   "GARBAGE_CANNON.title": "Garbage Cannon",
-  "GARBAGE_CANNON.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with all [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage {IfUpgraded:show:to all enemies | } for each [aqua]Scrap[/aqua].",
-
-
+  "GARBAGE_CANNON.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with all [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage {IfUpgraded:show:to all enemies|to a random enemy} for each [aqua]Scrap[/aqua].",
 
 
 

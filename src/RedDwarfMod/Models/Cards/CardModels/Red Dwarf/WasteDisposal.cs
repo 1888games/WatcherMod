@@ -38,11 +38,13 @@ public sealed class WasteDisposal() : RedDwarfCardModel(1, CardType.Attack, Card
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
 
+        await PowerCmd.ModifyAmount(Owner.Creature.GetPower<ScrapPower>(), -ScrapRequiredToPlay, Owner.Creature, this);
+
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(cardPlay.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
   
-        await PowerCmd.ModifyAmount(Owner.Creature.GetPower<ScrapPower>(), -ScrapRequiredToPlay, Owner.Creature, this);
+        
       
 
     }
