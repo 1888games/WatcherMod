@@ -29,7 +29,10 @@ public sealed class WatcherRelicPool : RelicPoolModel
             ModelDb.Relic<GoldenEye>(),
             ModelDb.Relic<HolyWater>(),
             ModelDb.Relic<VioletLotus>(),
-            ModelDb.Relic<Melange>()
+            ModelDb.Relic<Melange>(),
+            ModelDb.Relic<NovaFive>(),
+            ModelDb.Relic<SsTrojan>(),
+
         ];
     }
 

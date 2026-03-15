@@ -1,4 +1,16 @@
 {
+
+
+  "NOVA_FIVE.description": "At the start of each combat, gain 2 [aqua]Scrap[/aqua].",
+  "NOVA_FIVE.flavor": "Part of the Nova fleet, a Space Corps starship once powered by a Duality Jump Drive and operating in Deep Space.",
+  "NOVA_FIVE.title": "Nova 5",
+
+
+  "SS_TROJAN.description": "Replaces [gold]Pure Water[/gold]. At the start of each turn, gain 1 [aqua]Scrap[/aqua].",
+  "SS_TROJAN.flavor": "S.S. Trojan was a derelict Quantum Twister class starship used by the Space Corps Infinity Fleet.",
+  "SS_TROJAN.title": "S.S. Trojan",
+
+
   "PURE_WATER.description": "At the start of each combat, add 1 [gold]Miracle[/gold] into your hand.",
   "PURE_WATER.flavor": "Filtered through fine sand and free of impurities.",
   "PURE_WATER.title": "Pure Water",

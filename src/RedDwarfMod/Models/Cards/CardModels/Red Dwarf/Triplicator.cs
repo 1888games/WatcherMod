@@ -63,7 +63,7 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
                     high.DynamicVars[key].BaseValue += high.DynamicVars[key].BaseValue;
                 }
 
-                high.EnergyCost.SetThisCombat(2);
+                high.EnergyCost.SetThisCombat(0);
                 high.AddKeyword(CardKeyword.Retain);
                 high.AddKeyword(CardKeyword.Exhaust);
                 high.ExhaustOnNextPlay = true;
@@ -90,7 +90,7 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
                     low.DynamicVars[key].BaseValue = 0;
                 }
 
-                low.EnergyCost.SetThisCombat(2);
+                low.EnergyCost.SetThisCombat(3);
                 low.AddKeyword(CardKeyword.Unplayable);
                 low.AddKeyword(CardKeyword.Retain);
                 low.ExhaustOnNextPlay = true;

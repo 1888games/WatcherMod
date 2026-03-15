@@ -8,6 +8,6 @@ public static class TouchOfOrobasPatch
 {
     private static void Postfix(RelicModel starterRelic, ref RelicModel __result)
     {
-        if (starterRelic.Id == ModelDb.Relic<PureWater>().Id) __result = ModelDb.Relic<HolyWater>().ToMutable();
+        if (starterRelic.Id == ModelDb.Relic<NovaFive>().Id) __result = ModelDb.Relic<SsTrojan>().ToMutable();
     }
 }

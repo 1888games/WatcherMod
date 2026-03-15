@@ -72,7 +72,7 @@ public sealed class Watcher : CharacterModel
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<PureWater>()
+        ModelDb.Relic<NovaFive>()
     ];
 
     public override float AttackAnimDelay => 0.15f;
