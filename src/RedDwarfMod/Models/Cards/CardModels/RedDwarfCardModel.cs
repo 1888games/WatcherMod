@@ -61,28 +61,6 @@ public abstract class RedDwarfCardModel : CardModel {
         }
     }
 
-    //protected override IEnumerable<DynamicVar> CanonicalVars
-    //{
-    //    get
-    //    {
-    //        DynamicVar? powerVar = Character switch
-    //        {
-    //            RedDwarfCharacter.RIMMER => new PowerVar<RimmerPower>(1m),
-    //            RedDwarfCharacter.CAT => new PowerVar<CatPower>(1m),
-    //            RedDwarfCharacter.LISTER => new PowerVar<ListerPower>(1m),
-    //            RedDwarfCharacter.KRYTEN => new PowerVar<KrytenPower>(1m),
-    //            RedDwarfCharacter.KOCHANSKI => new PowerVar<KochanskiPower>(1m),
-
-    //            _ => null
-    //        };
-
-
-    //        return powerVar is null
-    //         ? base.CanonicalVars
-    //         : [.. base.CanonicalVars, powerVar];
-        
-    //    }
-    //}
 
 
 

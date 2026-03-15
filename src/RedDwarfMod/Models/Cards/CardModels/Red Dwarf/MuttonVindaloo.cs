@@ -18,7 +18,8 @@ public sealed class MuttonVindaloo() : RedDwarfCardModel(0, CardType.Skill, Card
 
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
-    [
+    [ 
+        ..base.CanonicalVars,
         new PowerVar<SustenancePower>(3m)
     ];
 

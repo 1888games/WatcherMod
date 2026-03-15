@@ -25,6 +25,7 @@ public sealed class CadmiumTwo() : RedDwarfCardModel(1, CardType.Skill, CardRari
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
+         ..base.CanonicalVars,
         new PowerVar<RadiationPower>(4m)
     ];
 

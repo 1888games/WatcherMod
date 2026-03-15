@@ -9,9 +9,9 @@ using RedDwarfMod.Models.Powers;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class JusticeField() : RedDwarfCardModel(2, CardType.Power, CardRarity.Uncommon, TargetType.Self)
+public sealed class JusticeField() : RedDwarfCardModel(2, CardType.Power, CardRarity.Uncommon, TargetType.Self, RedDwarfCharacter.KRYTEN)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<MirrorPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [.. base.CanonicalVars, new PowerVar<MirrorPower>(1)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [

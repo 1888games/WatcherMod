@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Map;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
@@ -27,20 +28,34 @@ public sealed class DimensionJump() : RedDwarfCardModel(3, CardType.Skill, CardR
         CardKeyword.Exhaust
     ];
 
-    
+    protected override IEnumerable<DynamicVar> CanonicalVars =>
+  [
+      ..base.CanonicalVars,
+         new DynamicVar("Gold", 50m)
+
+  ];
+
+
+
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
+        await PlayerCmd.LoseGold(base.DynamicVars["Gold"].IntValue, base.Owner);
+
         RoomType roomType = RunState.CurrentRoom.RoomType;
 
         AbstractRoom currentRoom = RunState.CurrentRoom;
 
-        NGame.Instance.ScreenShakeTrauma(MegaCrit.Sts2.Core.Nodes.Vfx.Utilities.ShakeStrength.Strong);
 
-        
         SfxCmd.Play("event:/sfx/enemy/enemy_attacks/living_fog/living_fog_summon");
 
         await currentRoom.Exit(RunState);
-        await NGame.Instance.Transition.RoomFadeOut();
+
+        if (NGame.Instance != null)
+        {
+            NGame.Instance?.ScreenShakeTrauma(MegaCrit.Sts2.Core.Nodes.Vfx.Utilities.ShakeStrength.TooMuch);
+            await NGame.Instance.Transition.RoomFadeOut();
+        }
+       
 
         if (roomType == RoomType.Boss)
         {
@@ -68,5 +83,6 @@ public sealed class DimensionJump() : RedDwarfCardModel(3, CardType.Skill, CardR
     protected override void OnUpgrade()
     {
         AddKeyword(CardKeyword.Retain);
+        DynamicVars["Gold"].UpgradeValueBy(-25);
     }
 }

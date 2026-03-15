@@ -4,39 +4,40 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.ValueProps;
+using RedDwarfMod.Models.Powers;
 
 namespace RedDwarfMod.Models.Cards;
 
 public sealed class WhiteHole() : RedDwarfCardModel(3, CardType.Skill, CardRarity.Rare, TargetType.None, RedDwarfCharacter.CAT)
 {
 
-    private bool _hasExtraTurn;
 
-    List<Creature> enemies = new List<Creature>();
+    protected override IEnumerable<DynamicVar> CanonicalVars =>
+    [
+        ..base.CanonicalVars,
+         new DynamicVar("Gold", 10m)
+       
+    ];
 
     public override HashSet<CardKeyword> CanonicalKeywords =>
     [
-        CardKeyword.Exhaust
+        CardKeyword.Exhaust,
+       
     ];
 
-    public override bool ShouldTakeExtraTurn(Player player)
+    protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        return _hasExtraTurn && player == Owner;
-    }
-
-    protected override Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
-    {
-        
+        await PlayerCmd.LoseGold(base.DynamicVars["Gold"].IntValue, base.Owner);
         PlayerCmd.EndTurn(Owner, false, SkipEnemyTurn);
 
-        return Task.CompletedTask;
     }
 
     public async Task SkipEnemyTurn()
     {
-        enemies = new List<Creature>();
-
+   
         GiveSingleTurnRetain();
 
         for (int i = CombatState.Enemies.Count - 1; i >= 0; i--)
@@ -55,5 +56,6 @@ public sealed class WhiteHole() : RedDwarfCardModel(3, CardType.Skill, CardRarit
     protected override void OnUpgrade()
     {
         EnergyCost.UpgradeBy(-1);
+        DynamicVars["Gold"].UpgradeValueBy(-15);
     }
 }

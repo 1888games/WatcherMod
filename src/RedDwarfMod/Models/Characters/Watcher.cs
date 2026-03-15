@@ -56,6 +56,7 @@ public sealed class Watcher : CharacterModel
         ModelDb.Card<CadmiumTwo>(),
         ModelDb.Card<WhiteHole>(),
         ModelDb.Card<DimensionJump>(),
+         ModelDb.Card<ConserveYourEnergy>(),
 
 
 

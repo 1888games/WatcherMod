@@ -5,7 +5,7 @@
   "SMEGHEAD.description": "[aqua][sine]Lister[/sine][/aqua]\n\n[red]Insult[/red] enemy.\nApply {CowedPower:diff()} [pink]Cowed[/pink].",
 
   "STIFF_SOCKS.title": "Stiff Socks",
-  "STIFF_SOCKS.description": "[aqua][sine]Lister[/sine][/aqua]\n\nWhack socks with a hammer.\nApply {SmegPower:diff()} [gold]Smeg[/gold].",
+  "STIFF_SOCKS.description": "[aqua][sine]Lister[/sine][/aqua]\n\nWhack socks with a hammer.\nApply {SmegPower:diff()} [jitter][gold]Smeg[/gold][/jitter].",
 
   "CUT_TOENAILS.title": "Trim Your Toenails...",
   "CUT_TOENAILS.description": "[aqua][sine]Lister[/sine][/aqua]\n\n....Using your teeth.\nApply {SmegPower:diff()} [gold]Smeg[/gold].",
@@ -15,6 +15,9 @@
 
   "MUTTON_VINDALOO.title": "Mutton Vindaloo",
   "MUTTON_VINDALOO.description": "[aqua][sine]Lister[/sine][/aqua]\n\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].",
+
+
+
 
 
   "DISTENDED_RECTUM.title": "Distended Rectum",
@@ -28,27 +31,35 @@
 
 
 
+
   "TRIPLICATOR.title": "Triplicator",
   "TRIPLICATOR.description": "[purple][sine]Kryten[/sine][/purple]\nChoose a card from your draw pile and add a [green]High[/green] and [red]Low[/red] copy to your hand.\nDoes not work on Triplicator!",
   "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate...",
 
   "JUSTICE_FIELD.title": "Justice Field",
-  "JUSTICE_FIELD.description": "Gain {MirrorPower:diff()} [blue]Mirror[/blue].",
+  "JUSTICE_FIELD.description": "[purple][sine]Kryten[/sine][/purple]\n\nGain {MirrorPower:diff()} [blue]Mirror[/blue].",
 
   "SHOOTING_IRONS.title": "Shooting Irons",
   "SHOOTING_IRONS.description": "[purple][sine]Kryten[/sine][/purple]\n\nFire a pair of pistols.\nDeal {Damage:diff()} damage twice.",
+
+  "DIMENSION_JUMP.title": "Dimension Jump",
+  "DIMENSION_JUMP.description": "[purple][sine]Kryten[/sine][/purple]\n\nPay {Gold:diff()} [gold]Gold[/gold].\nEnd this combat and skip to the nearest parallel dimension.\nStart new combat.",
+
+
+
 
 
   "TROUT_CREME.title": "Trout a la Creme",
   "TROUT_CREME.description": "[pink][sine]Cat[/sine][/pink]\n\nGain {Block:diff()} [gold]Block[/gold].\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].\nEnjoy your meal!",
 
 
-  "WHITE_HOLE.title": "A White Hole",
-  "WHITE_HOLE.description": "[pink][sine]Cat[/sine][/pink]\nEnd your turn AND skip enemy turn.\nIt's a white hole. What is it? Only joking!",
+  "WHITE_HOLE.title": "White Hole",
+  "WHITE_HOLE.description": "[pink][sine]Cat[/sine][/pink]\nPay {Gold:diff()} [gold]Gold[/gold]. End your turn AND skip enemy turn.\nIt's a white hole. What is it?\nOnly joking!",
+
+  "CONSERVE_YOUR_ENERGY.title": "Conserve Your Energy",
+  "CONSERVE_YOUR_ENERGY.description": "[pink][sine]Cat[/sine][/pink]\n\nEnd turn.\nGain [blue]{IfUpgraded:show:X+1|X}[/blue] {energyPrefix:energyIcons(1)} next turn.",
 
 
-  "DIMENSION_JUMP.title": "Dimension Jump",
-  "DIMENSION_JUMP.description": "[purple][sine]Kryten[/sine][/purple]\n\nEnd this combat and skip to the nearest parallel dimension.\nStart new combat.",
 
 
 

@@ -53,8 +53,16 @@ public sealed class RadiationPower : PowerModel
             await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), base.Owner, base.Amount, ValueProp.Unblockable | ValueProp.Unpowered, null, null);
             if (base.Owner.IsAlive)
             {
-                await PowerCmd.ModifyAmount(this, -Amount / 2, null, null);
-                ;
+                if (Amount == 1)
+                {
+                    await PowerCmd.Decrement(this);
+                }
+                else
+                {
+
+                    await PowerCmd.ModifyAmount(this, -Amount / 2, null, null);
+                }
+                
             }
             else
             {
