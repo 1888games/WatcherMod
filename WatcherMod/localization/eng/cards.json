@@ -13,12 +13,14 @@
   "TAKING_THE_SMEG.title": "Taking The Smeg",
   "TAKING_THE_SMEG.description": "[aqua][sine]Lister[/sine][/aqua]\n\nRemove all [gold]Smeg[/gold].\nEnemy loses {SmegDamage:diff()} HP for each [gold]Smeg[/gold] removed.",
 
-  "MUTTON_VINDALOO.title": "Mutton Vindaloo",
+  "MUTTON_VINDALOO.title": "Caviar Vindaloo",
   "MUTTON_VINDALOO.description": "[aqua][sine]Lister[/sine][/aqua]\n\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].",
-
 
   "ROOF_ATTACK.title": "Roof Attack",
   "ROOF_ATTACK.description": "[aqua][sine]Lister[/sine][/aqua]\n\nDeal {Damage:diff()} damage.\n[red]Loot[/red] {ScrapPower:diff()} [aqua]Scrap[/aqua].",
+
+
+
 
 
   "DISTENDED_RECTUM.title": "Distended Rectum",
@@ -30,10 +32,11 @@
   "CADMIUM_TWO.title": "Cadmium II",
   "CADMIUM_TWO.description": "[blue][sine]Rimmer[/sine][/blue]\n\nFailed to fix drive plate again.\nLeak {RadiationPower:diff()} [green]Radiation[/green].",
 
-
-
   "GARBAGE_POD.title": "Garbage Pod",
   "GARBAGE_POD.description": "After intensive investigation, of the markings on the alien pod, it has become clear, to me, [blue][sine]Rimmer[/sine][/blue], that we are dealing, with...it's a smegging Garbage Pod!\nGain {ScrapPower:diff()} [aqua]Scrap[/aqua]",
+
+
+
 
 
   "TRIPLICATOR.title": "Triplicator",
@@ -47,7 +50,7 @@
   "SHOOTING_IRONS.description": "[purple][sine]Kryten[/sine][/purple]\n\nFire a pair of pistols.\nDeal {Damage:diff()} damage twice.",
 
   "DIMENSION_JUMP.title": "Dimension Jump",
-  "DIMENSION_JUMP.description": "[purple][sine]Kryten[/sine][/purple]\n\nPay {Gold:diff()} [gold]Gold[/gold].\nEnd this combat and skip to the nearest parallel dimension.\nStart new combat.",
+  "DIMENSION_JUMP.description": "[purple][sine]Kryten[/sine][/purple]\nPay {Gold:diff()} [gold]Gold[/gold].\nEnd this combat and skip to the nearest parallel dimension.\nStart new combat.",
 
 
   "WASTE_DISPOSAL.title": "Waste Disposal",
@@ -55,6 +58,9 @@
 
   "GARBAGE_CANNON.title": "Garbage Cannon",
   "GARBAGE_CANNON.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with all [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage {IfUpgraded:show:to all enemies|to a random enemy} for each [aqua]Scrap[/aqua].",
+
+
+
 
 
 
