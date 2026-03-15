@@ -20,7 +20,7 @@ public sealed class MuttonVindaloo() : RedDwarfCardModel(0, CardType.Skill, Card
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [ 
         ..base.CanonicalVars,
-        new PowerVar<SustenancePower>(3m)
+        new PowerVar<SustenancePower>(4m)
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -36,6 +36,6 @@ public sealed class MuttonVindaloo() : RedDwarfCardModel(0, CardType.Skill, Card
 
     protected override void OnUpgrade()
     {
-        DynamicVars[Sustenance].UpgradeValueBy(1m);
+        DynamicVars[Sustenance].UpgradeValueBy(2m);
     }
 }

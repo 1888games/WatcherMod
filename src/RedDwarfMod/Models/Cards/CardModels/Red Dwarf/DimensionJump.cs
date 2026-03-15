@@ -42,7 +42,7 @@ public sealed class DimensionJump() : RedDwarfCardModel(3, CardType.Skill, CardR
     {
 
 
-        await PlayerCmd.LoseGold(base.DynamicVars[Gold].IntValue, base.Owner, GoldLossType.Spent);
+        
 
         RoomType roomType = RunState.CurrentRoom.RoomType;
 
@@ -66,6 +66,8 @@ public sealed class DimensionJump() : RedDwarfCardModel(3, CardType.Skill, CardR
 
             return;
         }
+
+        await PlayerCmd.LoseGold(base.DynamicVars[Gold].IntValue, base.Owner, GoldLossType.Spent);
 
         EncounterModel encounter = RunState.Act.PullNextEncounter(roomType).ToMutable();
 

@@ -2,19 +2,19 @@
 
 
   "SMEGHEAD.title": "Smeghead",
-  "SMEGHEAD.description": "[aqua][sine]Lister[/sine][/aqua]\n\n[red]Insult[/red] enemy.\nApply {CowedPower:diff()} [pink]Cowed[/pink].",
+  "SMEGHEAD.description": "[aqua][sine]Lister[/sine][/aqua]\n\n[red]Insult[/red] an enemy.\nApply {CowedPower:diff()} [pink]Cowed[/pink].",
 
   "STIFF_SOCKS.title": "Stiff Socks",
-  "STIFF_SOCKS.description": "[aqua][sine]Lister[/sine][/aqua]\n\nWhack socks with a hammer.\nApply {SmegPower:diff()} [jitter][gold]Smeg[/gold][/jitter].",
+  "STIFF_SOCKS.description": "[aqua][sine]Lister[/sine][/aqua] whacks his rock solid socks with a hammer to soften them up.\nApply {SmegPower:diff()} [jitter][gold]Smeg[/gold][/jitter].",
 
   "CUT_TOENAILS.title": "Trim Your Toenails...",
-  "CUT_TOENAILS.description": "[aqua][sine]Lister[/sine][/aqua]\n\n....Using your teeth.\nApply {SmegPower:diff()} [gold]Smeg[/gold].",
+  "CUT_TOENAILS.description": "[aqua][sine]Lister[/sine][/aqua] trims his toenails using his teeth.\nApply {SmegPower:diff()} [gold]Smeg[/gold].",
 
   "TAKING_THE_SMEG.title": "Taking The Smeg",
   "TAKING_THE_SMEG.description": "[aqua][sine]Lister[/sine][/aqua]\n\nRemove all [gold]Smeg[/gold].\nEnemy loses {SmegDamage:diff()} HP for each [gold]Smeg[/gold] removed.",
 
   "MUTTON_VINDALOO.title": "Caviar Vindaloo",
-  "MUTTON_VINDALOO.description": "[aqua][sine]Lister[/sine][/aqua]\n\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].",
+  "MUTTON_VINDALOO.description": "[aqua][sine]Lister[/sine][/aqua]\n\nHalf rice, half chips, and lots more bread and butter to follow.\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].",
 
   "ROOF_ATTACK.title": "Roof Attack",
   "ROOF_ATTACK.description": "[aqua][sine]Lister[/sine][/aqua]\n\nDeal {Damage:diff()} damage.\n[red]Loot[/red] {ScrapPower:diff()} [aqua]Scrap[/aqua].",
@@ -24,23 +24,23 @@
 
 
   "DISTENDED_RECTUM.title": "Distended Rectum",
-  "DISTENDED_RECTUM.description": "[blue][sine]Rimmer[/sine][/blue]\n\n[red]Insult[/red] enemy.\nApply {CowedPower:diff()} [pink]Cowed[/pink].",
+  "DISTENDED_RECTUM.description": "[blue][sine]Rimmer[/sine][/blue]\n\n[red]Insult[/red] an enemy.\nApply {CowedPower:diff()} [pink]Cowed[/pink].",
 
   "WELDING_MALLET.title": "Welding Mallet",
-  "WELDING_MALLET.description": "[blue][sine]Rimmer[/sine][/blue]\n\nDeal {Damage:diff()} damage.",
+  "WELDING_MALLET.description": "[blue][sine]Rimmer[/sine][/blue]\n\nHave you ever been hit with a welding mallet?\nDeal {Damage:diff()} damage.",
 
   "CADMIUM_TWO.title": "Cadmium II",
-  "CADMIUM_TWO.description": "[blue][sine]Rimmer[/sine][/blue]\n\nFailed to fix drive plate again.\nLeak {RadiationPower:diff()} [green]Radiation[/green].",
+  "CADMIUM_TWO.description": "[blue][sine]Rimmer[/sine][/blue] failed to fix the drive plate again...\nLeak {RadiationPower:diff()} [green]Radiation[/green].",
 
   "GARBAGE_POD.title": "Garbage Pod",
-  "GARBAGE_POD.description": "After intensive investigation, of the markings on the alien pod, it has become clear, to me, [blue][sine]Rimmer[/sine][/blue], that we are dealing, with...it's a smegging Garbage Pod!\nGain {ScrapPower:diff()} [aqua]Scrap[/aqua]",
+  "GARBAGE_POD.description": "After intensive investigation, of the markings on the alien pod, it has become clear, to me, [blue][sine]Rimmer[/sine][/blue], that we are dealing, with...a smegging Garbage Pod!\nGain {ScrapPower:diff()} [aqua]Scrap[/aqua]",
 
 
 
 
 
   "TRIPLICATOR.title": "Triplicator",
-  "TRIPLICATOR.description": "[purple][sine]Kryten[/sine][/purple]\nChoose a card from your draw pile and add a [green]High[/green] and [red]Low[/red] copy to your hand.\nDoes not work on Triplicator!",
+  "TRIPLICATOR.description": "[purple][sine]Kryten[/sine][/purple]\nChoose a card from your draw pile, add a [green]High[/green] and [red]Low[/red] copy to your hand.\nDoes not work on Triplicator!",
   "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate...",
 
   "JUSTICE_FIELD.title": "Justice Field",
@@ -50,28 +50,28 @@
   "SHOOTING_IRONS.description": "[purple][sine]Kryten[/sine][/purple]\n\nFire a pair of pistols.\nDeal {Damage:diff()} damage twice.",
 
   "DIMENSION_JUMP.title": "Dimension Jump",
-  "DIMENSION_JUMP.description": "[purple][sine]Kryten[/sine][/purple]\nPay {Gold:diff()} [gold]Gold[/gold].\nEnd this combat and skip to the nearest parallel dimension.\nStart new combat.",
+  "DIMENSION_JUMP.description": "[purple][sine]Kryten[/sine][/purple]\nPay {Gold:diff()} [gold]Gold[/gold].\nSkip to the nearest parallel dimension.\nStart new (non-boss) combat.",
 
 
   "WASTE_DISPOSAL.title": "Waste Disposal",
-  "WASTE_DISPOSAL.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with 1 [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage.",
+  "WASTE_DISPOSAL.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with\n1 [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage.",
 
   "GARBAGE_CANNON.title": "Garbage Cannon",
-  "GARBAGE_CANNON.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with all [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage {IfUpgraded:show:to all enemies|to a random enemy} for each [aqua]Scrap[/aqua].",
+  "GARBAGE_CANNON.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with\nall your [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage {IfUpgraded:show:to all enemies|to a random enemy} for each [aqua]Scrap[/aqua].",
 
 
 
 
 
 
-  "TROUT_CREME.title": "Trout a la Creme",
-  "TROUT_CREME.description": "[pink][sine]Cat[/sine][/pink]\n\nGain {Block:diff()} [gold]Block[/gold].\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].\nEnjoy your meal!",
+  "TROUT_CREME.title": "Trout à la Crème",
+  "TROUT_CREME.description": "[pink][sine]Cat:[/sine][/pink] FISH!\nToday's fish is Trout à la Crème. Enjoy your meal!\nGain {Block:diff()} [gold]Block[/gold].\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].",
 
   "WHITE_HOLE.title": "White Hole",
   "WHITE_HOLE.description": "[pink][sine]Cat[/sine][/pink]\nPay {Gold:diff()} [gold]Gold[/gold]. End your turn AND skip enemy turn.\nIt's a white hole. What is it?\nOnly joking!",
 
   "CONSERVE_YOUR_ENERGY.title": "Conserve Your Energy",
-  "CONSERVE_YOUR_ENERGY.description": "[pink][sine]Cat[/sine][/pink]\n\nEnd turn.\nGain [blue]{IfUpgraded:show:X+1|X}[/blue] {energyPrefix:energyIcons(1)} next turn.",
+  "CONSERVE_YOUR_ENERGY.description": "[pink][sine]Cat[/sine][/pink]\n\nEnd turn and gain [blue]{IfUpgraded:show:X+1|X}[/blue] {energyPrefix:energyIcons(1)} next turn.",
 
 
 
@@ -81,6 +81,8 @@
   "DEFEND_WATCHER.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "STRIKE_WATCHER.title": "Strike",
   "STRIKE_WATCHER.description": "Deal {Damage:diff()} damage.",
+
+
   "VIGILANCE.title": "Vigilance",
   "VIGILANCE.description": "Gain {Block:diff()} [gold]Block[/gold].\nEnter [gold]Calm[/gold].",
   "ERUPTION.title": "Eruption",
