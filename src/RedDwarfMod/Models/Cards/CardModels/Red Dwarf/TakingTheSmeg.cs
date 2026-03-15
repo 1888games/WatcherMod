@@ -15,7 +15,7 @@ public sealed class TakingTheSmeg() : RedDwarfCardModel(1, CardType.Skill, CardR
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         
-        new("SmegDamage", 10m)
+        new(SmegDamage, 10m)
     ];
 
 
@@ -38,7 +38,7 @@ public sealed class TakingTheSmeg() : RedDwarfCardModel(1, CardType.Skill, CardR
                 await PowerCmd.Remove(smegPower);
 
                 // Calculate damage: base damage × enemy count
-                var totalDamage =  amt * (int)DynamicVars["SmegDamage"].BaseValue;
+                var totalDamage =  amt * (int)DynamicVars[SmegDamage].BaseValue;
 
                 await CreatureCmd.Damage(choiceContext, enemy, totalDamage, ValueProp.Unpowered | ValueProp.SkipHurtAnim | ValueProp.Unblockable,this);
 
@@ -49,6 +49,6 @@ public sealed class TakingTheSmeg() : RedDwarfCardModel(1, CardType.Skill, CardR
     protected override void OnUpgrade()
     {
        // EnergyCost.UpgradeBy(-1);
-        DynamicVars["SmegDamage"].UpgradeValueBy(4m); // 2 → 3
+        DynamicVars[SmegDamage].UpgradeValueBy(4m); // 2 → 3
     }
 }

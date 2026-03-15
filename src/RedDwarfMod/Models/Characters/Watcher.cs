@@ -43,7 +43,6 @@ public sealed class Watcher : CharacterModel
         ModelDb.Card<DefendWatcher>(),
         ModelDb.Card<DefendWatcher>(),
         ModelDb.Card<DistendedRectum>(),
-        ModelDb.Card<DistendedRectum>(),
         ModelDb.Card<Smeghead>(),
         ModelDb.Card<Triplicator>(),
         ModelDb.Card<WeldingMallet>(),
@@ -56,7 +55,14 @@ public sealed class Watcher : CharacterModel
         ModelDb.Card<CadmiumTwo>(),
         ModelDb.Card<WhiteHole>(),
         ModelDb.Card<DimensionJump>(),
-         ModelDb.Card<ConserveYourEnergy>(),
+        ModelDb.Card<ConserveYourEnergy>(),
+        ModelDb.Card<RoofAttack>(),
+         ModelDb.Card<RoofAttack>(),
+            ModelDb.Card<GarbageCannon>(),
+            ModelDb.Card<RoofAttack>(),
+            ModelDb.Card<GarbageCannon>(),
+        ModelDb.Card<WasteDisposal>(),
+
 
 
 

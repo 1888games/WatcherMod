@@ -19,7 +19,8 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
         CardKeyword.Exhaust
     ];
 
- 
+    protected override bool IsPlayable => CardPile.GetCards(base.Owner, PileType.Draw).Count() > 0;
+
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         if (CombatState == null) return;
@@ -33,6 +34,8 @@ public sealed class Triplicator() : RedDwarfCardModel(3, CardType.Skill, CardRar
             
         };
         var drawPile = PileType.Draw.GetPile(Owner).Cards.ToList();
+
+        
         var card = (await CardSelectCmd.FromSimpleGrid(
             choiceContext,
             drawPile,

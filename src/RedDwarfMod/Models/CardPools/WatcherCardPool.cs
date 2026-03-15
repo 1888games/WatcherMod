@@ -114,6 +114,9 @@ public sealed class WatcherCardPool : CardPoolModel
             ModelDb.Card<WhiteHole>(),
             ModelDb.Card<DimensionJump>(),
             ModelDb.Card<ConserveYourEnergy>(),
+            ModelDb.Card<RoofAttack>(),
+            ModelDb.Card<GarbageCannon>(),
+            ModelDb.Card<WasteDisposal>(),
 
 
 

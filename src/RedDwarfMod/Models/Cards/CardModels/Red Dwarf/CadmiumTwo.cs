@@ -45,13 +45,13 @@ public sealed class CadmiumTwo() : RedDwarfCardModel(1, CardType.Skill, CardRari
             }
         }
 
-        await PowerCmd.Apply<RadiationPower>(base.CombatState.HittableEnemies, DynamicVars["RadiationPower"].BaseValue, base.Owner.Creature, null);
+        await PowerCmd.Apply<RadiationPower>(base.CombatState.HittableEnemies, DynamicVars[Radiation].BaseValue, base.Owner.Creature, null);
 
 
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars["RadiationPower"].UpgradeValueBy(2m);
+        DynamicVars[Radiation].UpgradeValueBy(2m);
     }
 }

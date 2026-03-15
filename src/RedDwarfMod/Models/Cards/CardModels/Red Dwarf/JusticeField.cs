@@ -22,7 +22,7 @@ public sealed class JusticeField() : RedDwarfCardModel(2, CardType.Power, CardRa
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<MirrorPower>(Owner.Creature, DynamicVars["MirrorPower"].IntValue, Owner.Creature, this);
+        await PowerCmd.Apply<MirrorPower>(Owner.Creature, DynamicVars[Mirror].IntValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

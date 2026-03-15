@@ -34,7 +34,7 @@ public sealed class StiffSocks() : RedDwarfCardModel(1, CardType.Skill, CardRari
         // Apply Mark power
         await PowerCmd.Apply<SmegPower>(
             cardPlay.Target,
-            DynamicVars["SmegPower"].IntValue,
+            DynamicVars[Smeg].IntValue,
             Owner.Creature,
             this
         );

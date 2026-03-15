@@ -34,7 +34,7 @@ public sealed class DistendedRectum() : RedDwarfCardModel(1, CardType.Skill, Car
         // Apply Mark power
         await PowerCmd.Apply<CowedPower>(
             cardPlay.Target,
-            DynamicVars["CowedPower"].IntValue,
+            DynamicVars[Cowed].IntValue,
             Owner.Creature,
             this
         );
@@ -43,6 +43,6 @@ public sealed class DistendedRectum() : RedDwarfCardModel(1, CardType.Skill, Car
 
     protected override void OnUpgrade()
     {
-        DynamicVars["CowedPower"].UpgradeValueBy(30m);
+        DynamicVars[Cowed].UpgradeValueBy(30m);
     }
 }

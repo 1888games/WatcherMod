@@ -34,7 +34,7 @@ public sealed class CutToenails() : RedDwarfCardModel(1, CardType.Skill, CardRar
         // Apply Mark power
         await PowerCmd.Apply<SmegPower>(
             cardPlay.Target,
-            DynamicVars["SmegPower"].IntValue,
+            DynamicVars[Smeg].IntValue,
             Owner.Creature,
             this
         );
@@ -43,6 +43,6 @@ public sealed class CutToenails() : RedDwarfCardModel(1, CardType.Skill, CardRar
 
     protected override void OnUpgrade()
     {
-        DynamicVars["SmegPower"].UpgradeValueBy(1);
+        DynamicVars[Smeg].UpgradeValueBy(1);
     }
 }

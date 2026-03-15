@@ -3,6 +3,7 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Gold;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
@@ -31,15 +32,17 @@ public sealed class DimensionJump() : RedDwarfCardModel(3, CardType.Skill, CardR
     protected override IEnumerable<DynamicVar> CanonicalVars =>
   [
       ..base.CanonicalVars,
-         new DynamicVar("Gold", 50m)
+         new DynamicVar(Gold, 50m)
 
   ];
 
-
+    protected override bool IsPlayable => base.IsPlayable && Owner.Gold >= base.DynamicVars[Gold].IntValue;
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PlayerCmd.LoseGold(base.DynamicVars["Gold"].IntValue, base.Owner);
+
+
+        await PlayerCmd.LoseGold(base.DynamicVars[Gold].IntValue, base.Owner, GoldLossType.Spent);
 
         RoomType roomType = RunState.CurrentRoom.RoomType;
 
@@ -83,6 +86,6 @@ public sealed class DimensionJump() : RedDwarfCardModel(3, CardType.Skill, CardR
     protected override void OnUpgrade()
     {
         AddKeyword(CardKeyword.Retain);
-        DynamicVars["Gold"].UpgradeValueBy(-25);
+        DynamicVars[Gold].UpgradeValueBy(-25m);
     }
 }

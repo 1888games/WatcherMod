@@ -27,7 +27,7 @@ public sealed class MuttonVindaloo() : RedDwarfCardModel(0, CardType.Skill, Card
     {
         await PowerCmd.Apply<SustenancePower>(
             Owner.Creature,
-            DynamicVars["SustenancePower"].IntValue,
+            DynamicVars[Sustenance].IntValue,
             Owner.Creature,
             this
         );
@@ -36,6 +36,6 @@ public sealed class MuttonVindaloo() : RedDwarfCardModel(0, CardType.Skill, Card
 
     protected override void OnUpgrade()
     {
-        DynamicVars["SustenancePower"].UpgradeValueBy(1m);
+        DynamicVars[Sustenance].UpgradeValueBy(1m);
     }
 }

@@ -35,7 +35,7 @@ public sealed class TroutCreme() : RedDwarfCardModel(1, CardType.Skill, CardRari
 
         await PowerCmd.Apply<SustenancePower>(
             Owner.Creature,
-            DynamicVars["SustenancePower"].IntValue,
+            DynamicVars[Sustenance].IntValue,
             Owner.Creature,
             this
         );
@@ -44,7 +44,7 @@ public sealed class TroutCreme() : RedDwarfCardModel(1, CardType.Skill, CardRari
 
     protected override void OnUpgrade()
     {
-        DynamicVars["SustenancePower"].UpgradeValueBy(2m);
+        DynamicVars[Sustenance].UpgradeValueBy(2m);
         DynamicVars.Block.UpgradeValueBy(2m);
 
     }

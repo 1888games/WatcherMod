@@ -18,7 +18,7 @@ public sealed class WhiteHole() : RedDwarfCardModel(3, CardType.Skill, CardRarit
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         ..base.CanonicalVars,
-         new DynamicVar("Gold", 10m)
+         new DynamicVar(Gold, 10m)
        
     ];
 
@@ -28,9 +28,11 @@ public sealed class WhiteHole() : RedDwarfCardModel(3, CardType.Skill, CardRarit
        
     ];
 
+    protected override bool IsPlayable => Owner.Gold >= base.DynamicVars["Gold"].IntValue;
+
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PlayerCmd.LoseGold(base.DynamicVars["Gold"].IntValue, base.Owner);
+        await PlayerCmd.LoseGold(base.DynamicVars[Gold].IntValue, base.Owner);
         PlayerCmd.EndTurn(Owner, false, SkipEnemyTurn);
 
     }
@@ -56,6 +58,6 @@ public sealed class WhiteHole() : RedDwarfCardModel(3, CardType.Skill, CardRarit
     protected override void OnUpgrade()
     {
         EnergyCost.UpgradeBy(-1);
-        DynamicVars["Gold"].UpgradeValueBy(-15);
+        DynamicVars[Gold].UpgradeValueBy(-15);
     }
 }

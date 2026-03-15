@@ -49,6 +49,12 @@
   "RADIATION_POWER.title": "Radiation",
   "RADIATION_POWER.description": "Enemies receive damage equal to their [green]Radiation[/green] exposure at the start of their turn. Radiation halves each turn.",
 
+  "SCRAP_POWER.title": "Scrap",
+  "SCRAP_POWER.description": "[aqua]Scrap[/aqua] can be exchanged via specific cards or powers for bonuses including but not limited to {energyPrefix:energyIcons(1)}, [blue]Block[/blue], [gold]Gold[/gold] and attack damage.",
+
+  "LOOT_POWER.title": "Loot",
+  "LOOT_POWER.description": "[red]Loot[/red] enemies in order to gain [aqua]Scrap[/aqua].",
+
 
   "CALM_STANCE.title": "Calm",
   "CALM_STANCE.description": "When you exit this Stance, gain [blue]2[/blue] {energyPrefix:energyIcons(1)}.",

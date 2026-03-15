@@ -34,7 +34,7 @@ public sealed class Smeghead() : RedDwarfCardModel(0, CardType.Skill, CardRarity
         // Apply Mark power
         await PowerCmd.Apply<CowedPower>(
             cardPlay.Target,
-            DynamicVars["CowedPower"].IntValue,
+            DynamicVars[Cowed].IntValue,
             Owner.Creature,
             this
         );
@@ -43,6 +43,6 @@ public sealed class Smeghead() : RedDwarfCardModel(0, CardType.Skill, CardRarity
 
     protected override void OnUpgrade()
     {
-        DynamicVars["CowedPower"].UpgradeValueBy(10m);
+        DynamicVars[Cowed].UpgradeValueBy(10m);
     }
 }

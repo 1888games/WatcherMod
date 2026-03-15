@@ -17,7 +17,8 @@
   "MUTTON_VINDALOO.description": "[aqua][sine]Lister[/sine][/aqua]\n\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].",
 
 
-
+  "ROOF_ATTACK.title": "Roof Attack",
+  "ROOF_ATTACK.description": "[aqua][sine]Lister[/sine][/aqua]\n\nDeal {Damage:diff()} damage.\n[red]Loot[/red] {ScrapPower:diff()} [aqua]Scrap[/aqua].",
 
 
   "DISTENDED_RECTUM.title": "Distended Rectum",
@@ -46,12 +47,18 @@
   "DIMENSION_JUMP.description": "[purple][sine]Kryten[/sine][/purple]\n\nPay {Gold:diff()} [gold]Gold[/gold].\nEnd this combat and skip to the nearest parallel dimension.\nStart new combat.",
 
 
+  "WASTE_DISPOSAL.title": "Waste_Disposal",
+  "WASTE_DISPOSAL.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with 1 [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage.",
+
+  "GARBAGE_CANNON.title": "Garbage Cannon",
+  "GARBAGE_CANNON.description": "[purple][sine]Kryten[/sine][/purple]\n\nLoad garbage cannon with all [aqua]Scrap[/aqua].\nDeal {Damage:diff()} damage {IfUpgraded:show:to all enemies | } for each [aqua]Scrap[/aqua].",
+
+
 
 
 
   "TROUT_CREME.title": "Trout a la Creme",
   "TROUT_CREME.description": "[pink][sine]Cat[/sine][/pink]\n\nGain {Block:diff()} [gold]Block[/gold].\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].\nEnjoy your meal!",
-
 
   "WHITE_HOLE.title": "White Hole",
   "WHITE_HOLE.description": "[pink][sine]Cat[/sine][/pink]\nPay {Gold:diff()} [gold]Gold[/gold]. End your turn AND skip enemy turn.\nIt's a white hole. What is it?\nOnly joking!",

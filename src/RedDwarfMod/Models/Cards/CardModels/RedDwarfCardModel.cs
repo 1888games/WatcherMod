@@ -16,6 +16,25 @@ public abstract class RedDwarfCardModel : CardModel {
 
     public RedDwarfCharacter Character = RedDwarfCharacter.NONE;
 
+    public const string Scrap = "ScrapPower";
+    public const string Gold = "Gold";
+    public const string Sustenance = "SustenancePower";
+    public const string SmegDamage = "SmegDamage";
+    public const string Smeg = "SmegPower";
+    public const string Cowed = "CowedPower";
+    public const string Mirror = "MirrorPower";
+    public const string Radiation = "RadiationPower";
+
+    public virtual int ScrapRequiredToPlay => 0;
+
+    protected override bool IsPlayable =>
+    base.IsPlayable &&
+    (
+        ScrapRequiredToPlay == 0 ||
+        (Owner.Creature.HasPower<ScrapPower>() &&
+         Owner.Creature.GetPower<ScrapPower>().Amount >= ScrapRequiredToPlay)
+    );
+
     public RedDwarfCardModel(
 
     int canonicalEnergyCost,
