@@ -33,7 +33,7 @@
   "CADMIUM_TWO.description": "[blue][sine]Rimmer[/sine][/blue] failed to fix the drive plate again...\nLeak {RadiationPower:diff()} [green]Radiation[/green].",
 
   "GARBAGE_POD.title": "Garbage Pod",
-  "GARBAGE_POD.description": "After intensive investigation, of the markings on the alien pod, it has become clear, to me, [blue][sine]Rimmer[/sine][/blue], that we are dealing, with...a smegging Garbage Pod!\nGain {ScrapPower:diff()} [aqua]Scrap[/aqua]",
+  "GARBAGE_POD.description": "[i]After intensive investigation, of the markings on the alien pod, it has become clear, to me, [blue][sine]Rimmer[/sine][/blue], that we are dealing, with...a smegging Garbage Pod![/i]\nGain {ScrapPower:diff()} [aqua]Scrap[/aqua]",
 
 
 
@@ -44,7 +44,7 @@
   "TRIPLICATOR.selectionScreenPrompt": "Select a card to Triplicate...",
 
   "JUSTICE_FIELD.title": "Justice Field",
-  "JUSTICE_FIELD.description": "[purple][sine]Kryten[/sine][/purple]\n\nYou are now entering the Justice Zone.\nGain {MirrorPower:diff()} [blue]Justice Field[/blue].",
+  "JUSTICE_FIELD.description": "[purple][sine]Kryten[/sine][/purple]\n\n[i]You are now entering the Justice Zone.[/i]\nGain {MirrorPower:diff()} [blue]Justice Field[/blue].",
 
   "SHOOTING_IRONS.title": "Shooting Irons",
   "SHOOTING_IRONS.description": "[purple][sine]Kryten[/sine][/purple]\n\nFire a pair of pistols.\nDeal {Damage:diff()} damage twice.",
@@ -65,7 +65,7 @@
 
 
   "TROUT_CREME.title": "Trout à la Crème",
-  "TROUT_CREME.description": "[pink][sine]Cat:[/sine][/pink] FISH!\nToday's fish is Trout à la Crème. Enjoy your meal!\nGain {Block:diff()} [gold]Block[/gold].\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].",
+  "TROUT_CREME.description": "[pink][sine]Cat:[/sine][/pink] FISH!\n[i]Today's fish is Trout à la Crème. Enjoy your meal![/i]\nGain {Block:diff()} [gold]Block[/gold].\nGain {SustenancePower:diff()} [orange]Sustenance[/orange].",
 
   "WHITE_HOLE.title": "White Hole",
   "WHITE_HOLE.description": "[pink][sine]Cat[/sine][/pink]\nPay {Gold:diff()} [gold]Gold[/gold]. End your turn AND skip enemy turn.\nIt's a white hole. What is it?\nOnly joking!",
@@ -73,7 +73,9 @@
   "CONSERVE_YOUR_ENERGY.title": "Conserve Your Energy",
   "CONSERVE_YOUR_ENERGY.description": "[pink][sine]Cat[/sine][/pink]\n\nEnd turn and gain [blue]{IfUpgraded:show:X+1|X}[/blue] {energyPrefix:energyIcons(1)} next turn.",
 
-
+  "SCOUTER.title": "Scouter",
+  "SCOUTER.description": "[pink][sine]Cat[/sine][/pink]\n[i]Engines stopped...scouter launched.[/i]\nPick a card from your draw pile or discard pile and add it to your hand.",
+  "SCOUTER.selectionScreenPrompt": "Select a card to add to your hand...",
 
 
 
