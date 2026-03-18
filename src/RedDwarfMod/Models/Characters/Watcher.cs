@@ -57,13 +57,11 @@ public sealed class Watcher : CharacterModel
         ModelDb.Card<DimensionJump>(),
         ModelDb.Card<ConserveYourEnergy>(),
         ModelDb.Card<RoofAttack>(),
-         ModelDb.Card<RoofAttack>(),
-            ModelDb.Card<GarbageCannon>(),
-            ModelDb.Card<RoofAttack>(),
-            ModelDb.Card<GarbageCannon>(),
+        ModelDb.Card<GarbageCannon>(),
         ModelDb.Card<WasteDisposal>(),
-         ModelDb.Card<GarbagePod>(),
-           ModelDb.Card<Scouter>(),
+        ModelDb.Card<GarbagePod>(),
+        ModelDb.Card<Scouter>(),
+        ModelDb.Card<RedAlert>(),
 
 
 

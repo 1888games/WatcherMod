@@ -24,6 +24,7 @@ public abstract class RedDwarfCardModel : CardModel {
     public const string Cowed = "CowedPower";
     public const string Mirror = "MirrorPower";
     public const string Radiation = "RadiationPower";
+    public const string Discard = "Discard";
 
     public virtual int ScrapRequiredToPlay => 0;
 
@@ -42,7 +43,8 @@ public abstract class RedDwarfCardModel : CardModel {
     CardRarity rarity,
     TargetType targetType,
     RedDwarfCharacter character = RedDwarfCharacter.NONE,
-    bool shouldShowInCardLibrary = true)
+    bool shouldShowInCardLibrary = true
+   )
     : base(canonicalEnergyCost, type, rarity, targetType, shouldShowInCardLibrary)
     {
         Character = character;
@@ -78,6 +80,8 @@ public abstract class RedDwarfCardModel : CardModel {
             default:
                 break;
         }
+        
+        
     }
 
 

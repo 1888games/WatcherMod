@@ -1,5 +1,4 @@
 ﻿using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -11,42 +10,35 @@ using RedDwarfMod.Models.Powers;
 
 namespace RedDwarfMod.Models.Cards;
 
-public sealed class TroutCreme() : RedDwarfCardModel(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self, RedDwarfCharacter.CAT, true) 
+public sealed class RedAlert() : RedDwarfCardModel(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self, RedDwarfCharacter.CAT, true) 
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromPower<SustenancePower>(),
-       
+        
     ];
 
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
        
-
-        new PowerVar<SustenancePower>(5m),
-        new BlockVar(4m, ValueProp.Move)
-      
+        new BlockVar(10m, ValueProp.Move),
+        new CardsVar(1)
        
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
+        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
 
-        await PowerCmd.Apply<SustenancePower>(
-            Owner.Creature,
-            DynamicVars[Sustenance].IntValue,
-            Owner.Creature,
-            this
-        );
 
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars[Sustenance].UpgradeValueBy(3m);
-        DynamicVars.Block.UpgradeValueBy(2m);
+       
+        DynamicVars.Block.UpgradeValueBy(3m);
+        DynamicVars.Cards.UpgradeValueBy(1m);
 
     }
 }

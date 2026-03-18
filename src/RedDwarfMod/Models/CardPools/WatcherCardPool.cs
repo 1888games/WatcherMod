@@ -117,10 +117,9 @@ public sealed class WatcherCardPool : CardPoolModel
             ModelDb.Card<RoofAttack>(),
             ModelDb.Card<GarbageCannon>(),
             ModelDb.Card<WasteDisposal>(),
-             ModelDb.Card<GarbagePod>(),
-               ModelDb.Card<Scouter>(),
-
-
+            ModelDb.Card<GarbagePod>(),
+            ModelDb.Card<Scouter>(),
+            ModelDb.Card<RedAlert>(),
 
 
         ];

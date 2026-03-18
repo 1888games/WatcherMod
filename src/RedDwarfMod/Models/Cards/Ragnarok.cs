@@ -12,7 +12,9 @@ public sealed class Ragnarok() : CardModel(3, CardType.Attack, CardRarity.Rare, 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new DamageVar(5m, ValueProp.Move),
-        new RepeatVar(5)
+        new RepeatVar(5),
+    
+       
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

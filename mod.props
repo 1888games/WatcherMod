@@ -1,6 +1,6 @@
 <Project>
 	<PropertyGroup>
-		<ModName>WatcherMod</ModName>
+		<ModName>Watcher</ModName>
 		<ModDisplayName>Red Dwarf - Better Smeg Than Dead</ModDisplayName>
 		<ModAuthor>Arlasoft</ModAuthor>
 		<ModVersion>0.0.1</ModVersion>
