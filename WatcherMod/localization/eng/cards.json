@@ -355,6 +355,9 @@
 
   "WISH_WATCHER.title": "Wish",
   "WISH_WATCHER.description": "Choose one:\nGain {PlatingPower:diff()} Plated Armor,\n{StrengthPower:diff()} [gold]Strength[/gold], or {Gold:diff()} [gold]Gold[/gold].",
-  "WISH_WATCHER.selectionScreenPrompt": "Choose a Card to play."
+  "WISH_WATCHER.selectionScreenPrompt": "Choose a Card to play.",
+
+  "ANCIENT_CARD.title": "Ancient Card",
+  "ANCIENT_CARD.description": "This is a placeholder card used for testing. It does nothing."
 
 }
